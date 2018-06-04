@@ -4,13 +4,13 @@ Final project of the Minor Programmeren at the University of Amsterdam
 Idea:
 
 Second world war, timelapse of countries that were conquered and freed, by dynamic colour filling.
-Focus will be on Europe. Since WWII was such an important event, it is beneficial for general knowledge to see how the war evolved over time. The target audience are historians, the regular public and schools could also use the visualisation for teaching about WWII
+Focus will be on Europe. Since WWII was such an important event, it is beneficial for general knowledge to see how the war evolved over time. The target audience are historians, the regular public and schools could also use the visualisation for teaching about WWII.
 
 If there is time left in the end, Japan and Africa will also be looked at.
 
 Graphs:
 
-Sunburst graph can be used to show number of casualties per nationality and zoom in how many of those casualities were lost per important battle.
+Sunburst graph can be used to show number of casualties per nationality and zoom in on how many of those casualities were lost per important battle.
 
 Hover drop down menu with important battles, information about the battle. Number of casualties per battle in bar chart. On x axis countries and on y axis number of casualties.
 
