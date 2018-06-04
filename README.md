@@ -16,8 +16,11 @@ D3 will be used for graphs: https://d3js.org/
 
 Sources:
 http://www.holocaustresearchproject.org/nazioccupation/
+
 https://en.wikipedia.org/wiki/German-occupied_Europe
+
 https://www.historyonthenet.com/world-war-two-statistics-data/
+
 https://ourworldindata.org/war-and-peace
 
 
