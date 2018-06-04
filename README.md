@@ -1,4 +1,4 @@
-# Minor-Project
+# MinorProject
 Final project of the Minor Programmeren at the University of Amsterdam
 
 Idea:
