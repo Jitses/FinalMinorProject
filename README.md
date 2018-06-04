@@ -2,6 +2,7 @@
 Final project of the Minor Programmeren at the University of Amsterdam
 
 Idea:
+
 Second world war, timelapse of countries that were conquered and freed, by dynamic colour filling.
 Focus will be on Europe. Since WWII was such an important event, it is beneficial for general knowledge to see how the war evolved over time. The target audience are historians, the regular public and schools could also use the visualisation for teaching about WWII
 
