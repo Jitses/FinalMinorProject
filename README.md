@@ -20,8 +20,8 @@ Hover drop down menu with important battles, information about the battle. Numbe
 General information about countries when hovering over the country: leader, number of inhabitants, free or conquered in the war.
 
 Buttons:
-German territory expansion: on click, shows the german territory expansion in colour per month
-Allied territory takeback: on click, shows the allied territory take back in colour per month
+German territory expansion: on click, shows the german territory expansion in colour per month.
+Allied territory takeback: on click, shows the allied territory take back in colour per month.
 
 Timeline: can be dragged to show the German occupation and freed countries by colour on monthly basis.
 
