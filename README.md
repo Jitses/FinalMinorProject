@@ -28,7 +28,7 @@ Timeline: can be dragged to show the German occupation and freed countries by co
 Similar visualisation: http://www.fallen.io/ww2/#
 
 Challenges:
-- If a country is partly conquered by the german empire, or partly freed by the allies,
+- If a country is partly conquered by the Germans, or partly freed by the allies,
   this will mean the country should also be partly coloured, this may be difficult.
 - A draggable timeline may also be difficult.
 
