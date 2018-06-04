@@ -9,6 +9,7 @@ Focus will be on Europe. Since WWII was such an important event, it is beneficia
 If there is time left in the end, Japan and Africa will also be looked at.
 
 Graphs:
+
 Sunburst graph can be used to show number of casualties per nationality and zoom in how many of those casualities were lost per important battle.
 
 Hover drop down menu with important battles, information about the battle. Number of casualties per battle in bar chart. On x axis countries and on y axis number of casualties.
