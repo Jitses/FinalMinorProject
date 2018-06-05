@@ -33,7 +33,9 @@ The sunburst will be positioned below the map. When clicked on a country, text a
 
 Data used: https://en.wikipedia.org/wiki/List_of_battles_by_casualties
 
+### Update function
 
+Waits for user actions. Uses if statements to find out what the user has clicked and updates a graph accordingly.
 ### Data
 To load data, a queue will be used. No API will be used, as all data will be downloaded first. The data will either be extracted as table format (csv), otherwise it will be copied by manually, since the datasets are not very big.
 
@@ -42,6 +44,11 @@ To load data, a queue will be used. No API will be used, as all data will be dow
 - Queue data
 - Load datamap
 - Create timeline
+- Create barchart
+- Create sunburst
+- Create country diagram (next to sunburst)
+- Loop update function to wait for user clicks
+
 
 
 
