@@ -13,7 +13,7 @@ Technical components:
 
 Dynamic colour change of the map over months of timeline (country free or occupied by the Germans):
 
-A dynamic colour change was also made in Data Processing week 5 to change the colour theme of a datamap. It can be used and adjusted to suit this project.
+A dynamic colour change was also made in Data Processing week 5, which can be found in my DataProcessing repository, to change the colour theme of a datamap. It can be used and adjusted to suit this project.
 
 The datamap will be placed inside a div (containerMap) of a fixed width. 
 
