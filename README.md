@@ -26,7 +26,7 @@ Data used: https://en.wikipedia.org/wiki/German-occupied_Europe
 Bar chart showing number of deaths in a country when clicked on that particular country in the map. It shows military deaths, total deaths, military wounded, civilian deaths.
 Data used: https://en.wikipedia.org/wiki/World_War_II_casualties
 
-### Linked view graph 3: Sunburst connected to map
+### Linked view graph 3: Sunburst connected to map and countries menu
 
 When clicked on a country on the map, a text appears on the bottom of the page: "Sunburst updated". To see the sunburst, a user has to scroll down to see the sunburst graph that has opened at the particular country.
 The sunburst graph can be used to show which important battles were in that country and total deaths caused by that battle.
