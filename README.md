@@ -55,3 +55,6 @@ https://www.historyextra.com/period/second-world-war/the-11-most-significant-bat
 https://en.wikipedia.org/wiki/World_War_II_casualties
 
 https://en.wikipedia.org/wiki/List_of_battles_by_casualties
+
+Sketch:
+https://github.com/Jitses/FinalMinorProject/blob/master/doc/dataproject.png
