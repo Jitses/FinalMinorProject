@@ -1,4 +1,4 @@
-# MinorProject WW2
+# Minor Project WW2
 
 Jitse Schol
 
