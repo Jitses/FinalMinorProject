@@ -29,7 +29,7 @@ Data used: https://en.wikipedia.org/wiki/World_War_II_casualties
 
 Technical component: D3 sunburst
 
-The sunburst will be positioned below the map. When clicked on a country, the page scrolls down to the sunburst and opens the data of the particular country. Jquery can be used to do this (https://stackoverflow.com/questions/18071046/smooth-scroll-to-specific-div-on-click).
+The sunburst will be positioned below the map. When clicked on a country, text appear at the bottom of the page "Sunburst updated". A user has to scroll down to see the sunburst with the data opened of the particular country. Jquery can be used to do this.
 
 Data used: https://en.wikipedia.org/wiki/List_of_battles_by_casualties
 
