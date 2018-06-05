@@ -9,7 +9,11 @@ Idea:
 Second world war, timelapse of countries that were conquered and freed, by dynamic colour filling.
 Focus will be on Europe. Since WWII was such an important event, it is beneficial for general knowledge to see how the war evolved over time. The target audience are historians, the regular public and schools could also use the visualisation for teaching about WWII.
 
-Optional: If there is time left in the end, Japan and Africa will also be looked at.
+Optional: 
+- If there is time left in the end, other continents will also be looked at.
+- Two buttons:
+  German territory expansion: on click, shows the German territory expansion in colour per month.
+  Allied territory takeback: on click, shows the allied territory take back in colour per month.
 
 Main Features and Graphs (all MVP):
 
@@ -19,9 +23,8 @@ Hover drop down menu with important battles, information about the battle. Numbe
 
 General information about countries when hovering over the country: leader, number of inhabitants, free or conquered in the war.
 
-Buttons:
-German territory expansion: on click, shows the German territory expansion in colour per month.
-Allied territory takeback: on click, shows the allied territory take back in colour per month.
+Button:
+Play button that plays the timeframe of 1939 until 1945. It shows the German expansion and allied takeback in colours on the map.
 
 Timeline: can be dragged to show the German occupation and freed countries by colour on monthly basis.
 
