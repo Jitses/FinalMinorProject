@@ -46,3 +46,5 @@ https://en.wikipedia.org/wiki/German-occupied_Europe
 https://www.historyonthenet.com/world-war-two-statistics-data/
 
 https://ourworldindata.org/war-and-peace
+
+https://www.historyextra.com/period/second-world-war/the-11-most-significant-battles-of-the-second-world-war/
