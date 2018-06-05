@@ -11,6 +11,7 @@ Next to the map a bar chart of the number of casualties per important battle. On
 
 Under the map, a scroll down arrow:
 onclick: page scrolls down
+
 New section shows sunburst diagram:
   - nr. of casualties
       - per nationality
