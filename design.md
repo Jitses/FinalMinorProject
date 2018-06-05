@@ -15,6 +15,11 @@ New section shows sunburst diagram:
   - nr. of casualties
       - per nationality
           - per battle
+          
+Technical components:
+- D3 tooltip
+- D3 datamaps
+- D3 graphs
  
 Optional: 
 - button of allied takeback and button of german empire expansion. So separate timeframes instead of a single play button.
