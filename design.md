@@ -29,7 +29,7 @@ For every country the x axis information will be saved. Onclick, this informatio
 
 Data used: https://en.wikipedia.org/wiki/World_War_II_casualties
 
-### Linked interactive view 3: Sunburst connected to map
+### Linked interactive view 3: Sunburst connected to map and countries menu
 
 Technical component: D3 sunburst
 
