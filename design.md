@@ -14,11 +14,13 @@ Technical components:
 ### Linked interactive view 2: Bar chart connected to map
 
 Technical component: D3 barchart
+
 Data used: https://en.wikipedia.org/wiki/World_War_II_casualties
 
 ### Linked interactive view 3: Sunburst connected to map
 
 Technical component: D3 sunburst
+
 Data used: https://en.wikipedia.org/wiki/List_of_battles_by_casualties
 
 
