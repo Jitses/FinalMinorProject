@@ -1,5 +1,5 @@
 # Design
-This document shows the design steps that will be taken in the process of creating the WW2 project. The layout of the project can be found in the readme. This documents intention is to focuss on the technical process.
+This document shows the design steps that will be taken in the process of creating the WW2 project. The layout of the project can be found in the readme. This documents intention is to focus on the technical process.
 
 ## Features
 
