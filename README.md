@@ -1,4 +1,4 @@
-# Minor Project WW2
+# Final Minor Project WW2
 
 Jitse Schol
 
