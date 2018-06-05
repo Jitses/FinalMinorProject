@@ -11,6 +11,10 @@ Technical components:
 - D3 datamaps: http://datamaps.github.io/
 - D3 tooltip
 
+Dynamic colour change of the map over months of timeline (country free or occupied by the Germans):
+
+A dynamic colour change was also made in Data Processing week 5 to change the colour theme of a datamap. It can be used and adjusted to suit this project.
+
 The datamap will be placed inside a div (containerMap) of a fixed width. 
 
 ### Linked interactive view 2: Bar chart connected to map
