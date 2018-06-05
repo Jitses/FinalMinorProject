@@ -15,16 +15,16 @@ Main Features and Graphs (all MVP):
 Map of Europe:
 General information about countries when hovering over the country: leader, number of inhabitants, free or conquered in the war.
 
-Linked view 1: Map with draggable timeline
+# Linked view 1: Map with draggable timeline
 
 The map shows the territory changes of nazi germany and the allies in colours, in the  timeframe of 1939 until 1945.
 
-Linked view graph 2: Bar chart connected to map
+# Linked view graph 2: Bar chart connected to map
 
 Bar chart showing number of deaths in a country when clicked on that particular country in the map. It shows military deaths, total deaths, military wounded, civilian deaths.
 Data used: https://en.wikipedia.org/wiki/World_War_II_casualties
 
-Linked view graph 3: Sunburst connected to map
+# Linked view graph 3: Sunburst connected to map
 
 When clicked on a country on the map, the page scrolls down to a sunburst graph and opens that particular country.
 The sunburst graph can be used to show which important battles were in that country and total deaths caused by that battle.
