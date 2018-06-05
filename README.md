@@ -18,6 +18,8 @@ General information about countries when hovering over the country: leader, numb
 ### Linked view 1: Map with draggable timeline
 
 The map shows the territory changes of nazi germany and the allies in colours, in the  timeframe of 1939 until 1945.
+Data used: https://en.wikipedia.org/wiki/German-occupied_Europe
+
 
 ### Linked view graph 2: Bar chart connected to map
 
@@ -28,7 +30,7 @@ Data used: https://en.wikipedia.org/wiki/World_War_II_casualties
 
 When clicked on a country on the map, the page scrolls down to a sunburst graph and opens that particular country.
 The sunburst graph can be used to show which important battles were in that country and total deaths caused by that battle.
-Next to the sunburst graph, there will be a menu showing all the countries. When clicked on one of the countries, the sunburst opens at that particular country.
+Next to the sunburst graph, there will be a menu showing all the countries. When clicked on one of the countries, the sunburst opens at that particular country. 
 Data used:  https://en.wikipedia.org/wiki/List_of_battles_by_casualties
 
 #### Optional: 
@@ -57,14 +59,13 @@ Sources:
 
 http://www.holocaustresearchproject.org/nazioccupation/
 
-https://en.wikipedia.org/wiki/German-occupied_Europe
-
 https://www.historyonthenet.com/world-war-two-statistics-data/
 
 https://ourworldindata.org/war-and-peace
 
 https://www.historyextra.com/period/second-world-war/the-11-most-significant-battles-of-the-second-world-war/
 
+https://en.wikipedia.org/wiki/List_of_World_War_II_battles
 
 Sketch:
 https://github.com/Jitses/FinalMinorProject/blob/master/doc/dataproject.png
