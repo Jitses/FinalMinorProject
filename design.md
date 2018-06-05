@@ -37,6 +37,16 @@ Data used: https://en.wikipedia.org/wiki/List_of_battles_by_casualties
 ### Data
 To load data, a queue will be used. No API will be used, as all data will be downloaded first. The data will either be extracted as table format (csv), otherwise it will be copied by manually, since the datasets are not very big.
 
+### Order of functions
+
+- Queue data
+- Load datamap
+- Create timeline
+
+
+
+
+
 
 
 
