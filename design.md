@@ -11,15 +11,21 @@ Technical components:
 - D3 datamaps: http://datamaps.github.io/
 - D3 tooltip
 
+The datamap will be placed inside a div (containerMap) of a fixed width. 
+
 ### Linked interactive view 2: Bar chart connected to map
 
 Technical component: D3 barchart
+
+The bar chart will be positioned next to the map in a div (containerBarchart)
 
 Data used: https://en.wikipedia.org/wiki/World_War_II_casualties
 
 ### Linked interactive view 3: Sunburst connected to map
 
 Technical component: D3 sunburst
+
+The sunburst will be positioned below the map. When clicked on a country, the page scrolls down to the sunburst and opens the data of the particular country. Jquery can be used to do this (https://stackoverflow.com/questions/18071046/smooth-scroll-to-specific-div-on-click).
 
 Data used: https://en.wikipedia.org/wiki/List_of_battles_by_casualties
 
