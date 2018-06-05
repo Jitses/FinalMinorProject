@@ -5,11 +5,10 @@ This document shows the design steps that will be taken in the process of creati
 
 ### Linked interactive view 1: Map with draggable timeline
 
-Source used as an example: http://bl.ocks.org/cmdoptesc/fc0e318ce7992bed7ca8
+Timeline: source used as an example: http://bl.ocks.org/cmdoptesc/fc0e318ce7992bed7ca8
 
 Technical components: 
-
-- D3 datamaps
+- D3 datamaps: http://datamaps.github.io/
 - D3 tooltip
 
 ### Linked interactive view 2: Bar chart connected to map
@@ -20,12 +19,12 @@ Data used: https://en.wikipedia.org/wiki/World_War_II_casualties
 ### Linked interactive view 3: Sunburst connected to map
 
 Technical component: D3 sunburst
-
 Data used: https://en.wikipedia.org/wiki/List_of_battles_by_casualties
 
-Optional: 
-- button of allied takeback and button of german empire expansion. So separate timeframes instead of a single play button.
-- Include other continents
+
+### Data
+To load data, a queue will be used. No API will be used, as all data will be downloaded first. The data will either be extracted as table format (csv), otherwise it will be copied by manually, since the datasets are not very big.
+
 
 
 
