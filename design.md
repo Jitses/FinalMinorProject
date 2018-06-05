@@ -20,6 +20,8 @@ Optional:
 - button of allied takeback and button of german empire expansion. So separate timeframes instead of a single play button.
 - Include other continents
 
+Data can be copied or downloaded from the sources below.
+
 Sources:
 
 http://www.holocaustresearchproject.org/nazioccupation/
