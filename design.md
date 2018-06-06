@@ -17,7 +17,7 @@ Dynamic colour change of the map over months of timeline (country free or occupi
 
 A dynamic colour change was also made in Data Processing week 5, which can be found in my DataProcessing repository, to change the colour theme of a datamap. It can be used and adjusted to suit this project.
 
-When the timeline is dragged, if statements can used to check if the countries were occupied at that time. After that, by looping over all countries, the right colours can be given to the country.
+When the timeline is dragged, if statements can be used to check if the countries were occupied at that time. By looping over all countries, the right colours can be given to each country.
 
 ### Linked interactive view 2: Bar chart connected to map
 
@@ -25,7 +25,7 @@ Technical component: D3 barchart
 
 The bar chart will be positioned next to the map in a div (containerBarchart)
 
-For every country the x axis information will be saved. Onclick, this information is displayed by using a dynamic domain function.
+For every country, the x axis information will be loaded when clicked. The y axis will also be adjusted to the country's data range.
 
 Data used: https://en.wikipedia.org/wiki/World_War_II_casualties
 
@@ -33,22 +33,22 @@ Data used: https://en.wikipedia.org/wiki/World_War_II_casualties
 
 Technical component: D3 sunburst
 
-The sunburst will be positioned below the map. When clicked on a country, text appear at the bottom of the page "Sunburst updated". A user has to scroll down to see the sunburst with the data opened of the particular country. A arrow on the bottom of the page can be used to indicate that a user can scroll down.
+The sunburst will be positioned below the map. When clicked on a country, text appear at the bottom of the page "Sunburst updated". A user has to scroll down to see the sunburst with the data opened of the particular country. An arrow at the bottom of the page can be used to indicate that a user can scroll down.
 
-Aside from listening to map clicks, the sunburst also listens to clicks on the countries menu to the left of the sunburst. This menu is made, because otherwise users would always have to scroll back to the map to be able to click on a country and update the sunburst.
+Aside from listening to map clicks, the sunburst also listens to clicks on the countries menu to the left/right of the sunburst. This menu is made, because otherwise users would always have to scroll back to the map to be able to click on a country and update the sunburst.
 
 Data used: https://en.wikipedia.org/wiki/List_of_battles_by_casualties
 
 ### Update function
 
-Waits for user actions. Uses if statements to find out what the user has clicked and updates a graph accordingly.
+Waits for user actions. Uses if statements to find out what the user has clicked and updates accordingly.
 
 ### Data
-To load data, a queue will be used. No API will be used, as all data will be downloaded first. The data will either be extracted as table format (csv), otherwise it will be copied by manually, since the datasets are not very big.
+To load data, json formats will be used. No API will be used, as all data will be downloaded first. The data will either be extracted as table format (csv), otherwise it will be copied manually, since the datasets are not very big.
 
 ### Order of functions
 
-- Queue data
+- Load data
 - Load datamap
 - Create timeline
 - Create barchart
