@@ -1,0 +1,54 @@
+/* CSS of barchart retrieved from my own dataprocessing repository */
+
+
+/* style of axis */
+.axis path, .axis line, .axis_x path, .axis_x line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+/* style of axis text */
+.axis text{
+  font-family: sans-serif;
+  font-size: 11px;
+}
+
+/* style of x axis text */
+.axis_x text{
+  display: none;
+}
+
+/* retrieved from http://bl.ocks.org/Caged/6476579 */
+rect{
+  fill: orange;
+}
+rect:hover{
+  fill: blue
+}
+/*
+ * retrieved from https://css-tricks.com/snippets/css/text-rotation/
+ * rotates text
+ */
+.y_axis_text {
+
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+
+  /* IE */
+  -ms-transform: rotate(-90deg);
+
+  /* Opera */
+  -o-transform: rotate(-90deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+  /* set position */
+  position: absolute;
+  left:-60px;
+  bottom: 55%;
+}
