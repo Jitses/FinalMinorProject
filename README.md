@@ -68,5 +68,5 @@ https://www.historyextra.com/period/second-world-war/the-11-most-significant-bat
 https://en.wikipedia.org/wiki/List_of_World_War_II_battles
 
 Sketch:
-https://github.com/Jitses/FinalMinorProject/blob/master/doc/plan.jpg
+![](doc/plan.jpg)
 
