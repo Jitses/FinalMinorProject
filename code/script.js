@@ -37,10 +37,10 @@
       // Initialize empty array
       countryData = []
 
-      var militaryDeathsAllCauses = dataset['data'][1]['Military deaths from all causes']
-      var civilianDeaths = dataset['data'][1]['Civilian deaths due to military activity and crimes against humanity']
-      var militaryWounded = dataset['data'][1]['Military wounded']
-      var totalDeaths = dataset['data'][1]['Total Deaths']
+      var militaryDeathsAllCauses = dataset['data'][0]['Military deaths from all causes']
+      var civilianDeaths = dataset['data'][0]['Civilian deaths due to military activity and crimes against humanity']
+      var militaryWounded = dataset['data'][0]['Military wounded']
+      var totalDeaths = dataset['data'][0]['Total Deaths']
       console.log(countryData)
       // Push variables to countryData array
       countryData.push(militaryDeathsAllCauses, civilianDeaths, militaryWounded, totalDeaths)
@@ -112,7 +112,7 @@
             return(0)
           }
           else {
-            return ((range_min_y - range_max_y) * domain_max_y / d)
+            return ((range_min_y - range_max_y) * (domain_max_y / d))
           }
         })
 
@@ -126,7 +126,7 @@
               return(0)
             }
             else {
-              return yScale(d)
+              return (range_max_y * (domain_max_y / d))
             }
 
         });
