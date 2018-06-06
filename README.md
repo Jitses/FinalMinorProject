@@ -24,7 +24,7 @@ Data used: https://en.wikipedia.org/wiki/German-occupied_Europe
 ### Linked view graph 2: Bar chart connected to map
 
 Bar chart showing number of deaths in a country when clicked on that particular country in the map. It shows military deaths, total deaths, military wounded, civilian deaths.
-Data used: https://en.wikipedia.org/wiki/World_War_II_casualties
+Data used: https://en.wikipedia.org/wiki/World_War_II_casualties and https://www.secondworldwarhistory.com/world-war-2-statistics.asp
 
 ### Linked view graph 3: Sunburst connected to map and countries menu
 
