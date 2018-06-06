@@ -24,25 +24,29 @@
       }
       });
 
-      // Code barchart retrieved from my own Data Processing repository
 
-      // append title
+
+
+
+      // Some of the code of the barchart was retrieved from my own Data Processing repository
+
+      // Append title
       d3.select("head").append("title").text("Casualties");
 
-      // retrieved from http://learnjsdata.com/read_data.html
-      d3.json("dataset", function(dataset) {
+      // Retrieved from http://learnjsdata.com/read_data.html
+      d3.json("/Users/Jitse/Desktop/FinalMinorProject/data/wikiCasualties.json", function(dataset) {
 
-      // create SVG element, retrieved from http://alignedleft.com/tutorials/d3/making-a-bar-chart
+      // Create SVG element, retrieved from http://alignedleft.com/tutorials/d3/making-a-bar-chart
       var svg = d3.select("body")
       .append("svg")
 
-      // set width svg
+      // Set width svg
       .attr("width", 1000)
 
-      // set height svg
+      // Set height svg
       .attr("height", 600);
 
-      // select all rectangles
+      // Select all rectangles
       svg.selectAll("rect")
 
       // use dataset
@@ -177,7 +181,7 @@
 
       // call y axis
       .call(yAxis);
-      
+
       });
 
 
