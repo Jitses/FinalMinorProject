@@ -32,6 +32,9 @@ When clicked on a country on the map, a text appears on the bottom of the page: 
 The sunburst graph can be used to show which important battles were in that country and total deaths caused by that battle both on the allied side and the axis side.
 Next to the sunburst graph, there will be a menu showing all the countries. When clicked on one of the countries, the sunburst opens at that particular country.
 Data used:  https://en.wikipedia.org/wiki/List_of_battles_by_casualties
+            https://www.army-technology.com/features/featurethe-20th-centurys-10-deadliest-battles-the-worst-military-disasters-4181684/
+            In general, Wikipedia can be used to search for each important battle, after which
+            the number of axis and allied casualties is shown.
 
 #### Optional:
 - If there is time left in the end, other continents can be looked at.

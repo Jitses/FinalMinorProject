@@ -4,6 +4,12 @@
   * Student Number: 10781463
   * 5-5-2018
   */
+
+// linken bar chart met map:
+// check met d3 maps welk land er aan geklikt wordt.
+// Vervolgens loopen over de dataset totdat je hetzelfde land tegenkomt
+// Vervolgens de index opslaan van de loop en dat land van kleur veranderen
+
   // http://datamaps.github.io/
   window.onload = function(){
       var map = new Datamap({
@@ -29,7 +35,7 @@
       });
 
       // Source: My Data processing week 5 repository
-      // updates colors, used in the different color themes
+      // Updates colors, used in the different color themes
       function color_updater(colorinput){
         var countries = Datamap.prototype.worldTopo.objects.world.geometries;
 
@@ -65,16 +71,23 @@
       var militaryWounded = dataset['data'][5]['Military wounded']
       var totalDeaths = dataset['data'][5]['Total Deaths']
       console.log(countryData)
+
       // Push variables to countryData array
       countryData.push(militaryDeathsAllCauses, civilianDeaths, militaryWounded, totalDeaths)
-
-
 
       // Source used for bar chart basis: http://bl.ocks.org/d3noob/8952219
       // SVG dimensions bar chart
       var marginBarChart = {top: 20, right: 40, left: 40, bottom: 20}
       var heightBarChart = 500 - marginBarChart.top - marginBarChart.bottom
       var widthBarChart = 550 - marginBarChart.left - marginBarChart.right
+
+      // http://bl.ocks.org/Caged/6476579
+      var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([-10, 0])
+        .html(function(d, i) {
+          return "<span style='color:red'>" + d + "</span>";
+        })
 
       // Create SVG element, retrieved from http://alignedleft.com/tutorials/d3/making-a-bar-chart
       var svg = d3.select("#containerBarChart")
@@ -86,55 +99,56 @@
         // Set height svg
         .attr("height", heightBarChart + marginBarChart.top + marginBarChart.bottom)
 
+      // http://bl.ocks.org/Caged/6476579
+      svg.call(tip);
 
-              var domain_min_x = 0;
+      var domain_min_x = 0;
 
-              // 5 data points
-              var domain_max_x = 5;
+      // 5 data points
+      var domain_max_x = countryData.length;
 
-              var domain_min_y = 0;
+      var domain_min_y = 0;
 
-              // Initiate max domain of y at 0
-              var domain_max_y = 0
+      // Initiate max domain of y at 0
+      var domain_max_y = 0
 
-              // Calculates max y domain
-              for (i = 0; i < countryData.length; i++){
-                if (countryData[i] == "No data"){
-                  domain_max_y = domain_max_y
-                }
+      // Calculates max y domain
+      for (i = 0; i < countryData.length; i++){
+        if (countryData[i] == "No data"){
+          domain_max_y = domain_max_y
+        }
 
-                else if (Number(countryData[i]) > domain_max_y){
-                  // Set new y domain max
-                  domain_max_y= Number(countryData[i])
-                }
-              }
-              console.log(domain_max_y)
+        else if (Number(countryData[i]) > domain_max_y){
+          // Set new y domain max
+          domain_max_y= Number(countryData[i])
+        }
+      }
 
-              // Set ranges
-              var range_min_x = 75;
-              var range_max_x = 800;
-              var range_min_y = 400;
-              var range_max_y = 100;
+      // Set ranges
+      var range_min_x = 75;
+      var range_max_x = 800;
+      var range_min_y = 400;
+      var range_max_y = 100;
 
-              // create x scale using x domain and x range
-              var xScale = d3.scale.linear()
-                .domain([domain_min_x, domain_max_x])
-                .range([range_min_x, range_max_x]);
+      // Create x scale using x domain and x range
+      var xScale = d3.scale.linear()
+        .domain([domain_min_x, domain_max_x])
+        .range([range_min_x, range_max_x]);
 
-              // create y scale using y domain and y range
+      // Create y scale using y domain and y range
 
-              var yScale = d3.scale.linear()
-                .domain([domain_min_y, domain_max_y])
-                .range([heightBarChart, 0]);
+      var yScale = d3.scale.linear()
+        .domain([domain_min_y, domain_max_y])
+        .range([heightBarChart, 0]);
 
       // Select all rectangles
       svg.selectAll("rect")
 
-        // use dataset
+        // Use dataset
         .data(countryData)
         .enter()
 
-        // append rectangle
+        // Append rectangle
         .append("rect")
 
         // https://www.digitalocean.com/community/tutorials/getting-started-with-data-visualization-using-javascript-and-the-d3-library
@@ -160,33 +174,35 @@
             else {
               return (yScale(d))
             }
-        });
+        })
+        // http://bl.ocks.org/Caged/6476579
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide);
 
-      // create y axis
+      // Create y axis
       var yAxis = d3.svg.axis()
 
-        // use y scale
+        // Use y scale
         .scale(yScale)
 
-        // set orient
+        // Set orient
         .orient("left")
 
-        // // set ticks
-        // .ticks(4);
-
-      // create x axis
+      // Create x axis
       var xAxis = d3.svg.axis()
 
-        // use x scale
+        // Use x scale
         .scale(xScale)
 
-        // set orient
+        // Set orient
         .orient("bottom")
 
-        // append x axis
+        .ticks(0)
+
+        // Append x axis
         svg.append("g")
 
-        // use axis_x class
+        // Use axis_x class
         .attr("class", "axis_x")
 
         // transform x axis
