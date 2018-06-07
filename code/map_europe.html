@@ -6,6 +6,9 @@
 -->
 
 <!-- Dataset used for bar chart wikicasualties https://en.wikipedia.org/wiki/World_War_II_casualties; -->
+<!-- Some country IDs of the datamaps.world.min.js were -99. For instance Cyprus and Kosovo.
+This caused problems when colouring the map dynamically. Therefore the -99s were changed to a country
+id that fit in the data (did not collide with another variable name). Cyprus ID was for instance changed to CYP. -->
 
 <!DOCTYPE html>
 <html>
@@ -15,10 +18,16 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
     <script src="/datamaps.world.min.js"></script>
-    <script src="/script.js"></script>
+    <script src="/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
   <body>
-    <!-- <div id="containerMap" style="position: relative; width: 50%; height: 420px;"></div> -->
+    <div id="upperContainer">
+       <div id="containerBarChart"></div>
+       <div id="containerMap"></div>
+       <div id="slider"></div>
+    </div>
+
   </body>
 
 </html>

@@ -29,11 +29,11 @@ Data used: https://en.wikipedia.org/wiki/World_War_II_casualties and https://www
 ### Linked view graph 3: Sunburst connected to map and countries menu
 
 When clicked on a country on the map, a text appears on the bottom of the page: "Sunburst updated". To see the sunburst, a user has to scroll down to see the sunburst graph that has opened at the particular country.
-The sunburst graph can be used to show which important battles were in that country and total deaths caused by that battle.
-Next to the sunburst graph, there will be a menu showing all the countries. When clicked on one of the countries, the sunburst opens at that particular country. 
+The sunburst graph can be used to show which important battles were in that country and total deaths caused by that battle both on the allied side and the axis side.
+Next to the sunburst graph, there will be a menu showing all the countries. When clicked on one of the countries, the sunburst opens at that particular country.
 Data used:  https://en.wikipedia.org/wiki/List_of_battles_by_casualties
 
-#### Optional: 
+#### Optional:
 - If there is time left in the end, other continents can be looked at.
 - Scroll button at bottom of page that scrolls to sunburst diagram.
 - Play button that starts the timeline from 1939 until 1945 showing the map territory changes
@@ -41,7 +41,7 @@ Data used:  https://en.wikipedia.org/wiki/List_of_battles_by_casualties
 - Two buttons:
   German territory expansion: on click, shows the German territory expansion in colour per month.
   Allied territory takeback: on click, shows the allied territory take back in colour per month.
- 
+
 
 Similar visualisation: http://www.fallen.io/ww2/#
 
@@ -69,4 +69,3 @@ https://en.wikipedia.org/wiki/List_of_World_War_II_battles
 
 Sketch:
 ![](doc/plan.jpg)
-

@@ -1,6 +1,22 @@
+#upperContainer{
+  width: 100%;
+  height: 500px;
+
+}
+
+#containerMap{
+  width: 50%;
+  height: 420px;
+}
+#slider, #containerMap{
+  position: relative;
+  left: 0;
+}
+#slider{
+  top: -100px;
+}
+
 /* CSS of barchart retrieved from my own dataprocessing repository */
-
-
 /* style of axis */
 .axis path, .axis line, .axis_x path, .axis_x line {
     fill: none;
