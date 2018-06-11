@@ -1,4 +1,4 @@
-[{"Country": "Albania", "Invasion date": "4-39", "Surrender Date": "9-43", "Allied Control Date": "11-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"data":[{"Country": "Albania", "Invasion date": "4-39", "Surrender Date": "9-43", "Allied Control Date": "11-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
 {"Country": "Austria", "Invasion date": "1-39", "Surrender Date": "1-39", "Allied Control Date": "", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
 {"Country": "Belgium", "Invasion date": "5-40", "Surrender Date": "5-40", "Allied Control Date": "11-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
 {"Country": "Bulgaria", "Invasion date": "3-41", "Surrender Date": "3-41", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
@@ -24,6 +24,6 @@
 {"Country": "Switzerland", "Invasion date": "", "Surrender Date": "", "Allied Control Date": "", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "True"}
 {"Country": "Turkey", "Invasion date": "", "Surrender Date": "", "Allied Control Date": "2-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "True"}
 {"Country": "United Kingdom", "Invasion date": "", "Surrender Date": "", "Allied Control Date": "1-39", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Yugoslavia", "Invasion date": "4-41", "Surrender Date": "4-41", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}]
+{"Country": "Yugoslavia", "Invasion date": "4-41", "Surrender Date": "4-41", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}]}
 /* http://www.historyplace.com/worldwar2/timeline/ww2time.htm */
 /* https://en.wikipedia.org/wiki/World_War_II_by_country */

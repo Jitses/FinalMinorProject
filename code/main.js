@@ -361,28 +361,29 @@ function simpleSlider () {
     return slider;
 }
   // Retrieved from http://learnjsdata.com/read_data.html
-  d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/wikiCasualties.json", function(dataset) {
+  d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/occupation.json", function(dataset) {
 
-  var svg = d3.select("#slider").append("svg").attr("width", 500).attr("height", 100),
-      slider = new simpleSlider();
+    var svg = d3.select("#slider").append("svg").attr("width", 500).attr("height", 100),
+        slider = new simpleSlider();
 
-      // The war took 72 months. Therefore every month has a value of 1.0/72
-      month = 1.0 / 72
+        // The war took 72 months. Therefore every month has a value of 1.0/72
+        month = 1.0 / 72
 
-      slider.width(400).x(20).y(10).value(1.0).event(function(){
+        slider.width(400).x(20).y(10).value(1.0).event(function(){
 
-        if (slider.value() <= month){
+          if (slider.value() <= month){
+            console.log(dataset)
+          }
 
-        }
+          // Slider value is between 0 and 1
+          if (slider.value() > 0.5){
+              color_updater("orange")
+          }
+          else {
+            color_updater("blue")
+          }
+        });
 
-        // Slider value is between 0 and 1
-        if (slider.value() > 0.5){
-            color_updater("orange")
-        }
-        else {
-          color_updater("blue")
-        }
-      });
-
-      svg.call(slider);
-};
+        svg.call(slider);
+      })
+  };
