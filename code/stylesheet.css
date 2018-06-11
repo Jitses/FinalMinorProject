@@ -14,16 +14,14 @@
   right: 0px;
   top: 50px;
 }
-#slider{
-  position: relative;
-  left: 800px;
-}
 
 #containerBarChart{
   margin-top: 50px;
 }
 #slider{
-  top: -100px;
+  position: absolute;
+  top: 500px;
+  left: 800px;
 }
 
 /* CSS of barchart retrieved from my own dataprocessing repository */

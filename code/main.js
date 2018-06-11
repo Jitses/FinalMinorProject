@@ -94,9 +94,11 @@ window.onload = function(){
           var militaryWounded = dataset.data[index]['Military wounded']
           var totalDeaths = dataset.data[index]['Total Deaths']
 
+
+
           // Push variables to countryData array
           countryData.push(militaryDeathsAllCauses, civilianDeaths, militaryWounded, totalDeaths)
-
+          console.log(countryData)
           if (countryData[0] == "No data" && countryData[1] == "No data" && countryData[2] == "No data" && countryData[3] == "No data"){
 
             document.getElementById('containerBarChart').innerHTML = "No data for the country"
@@ -262,7 +264,7 @@ window.onload = function(){
           index = index + 1
         }
       }
-      document.getElementById('containerBarChart').innerHTML = "Country unfound";
+      document.getElementById('containerBarChart').innerHTML = "No data for the country";
     });
     }
 
@@ -318,7 +320,7 @@ function simpleSlider () {
             d3.event.sourceEvent.stopPropagation();
         })
 
-        //Draggable circle to represent the current value
+        //  Draggable circle to represent the current value
         var valueCircle = selection.append("circle")
             .attr("cx", x + (width * value))
             .attr("cy", y)
@@ -363,18 +365,21 @@ function simpleSlider () {
 
     return slider;
 }
-  var svg = d3.select("#slider").append("svg").attr("width", 1000).attr("height", 700).attr("position", "relative").attr("left", 1000),
-          slider = new simpleSlider();
+  var svg = d3.select("#slider").append("svg").attr("width", 500).attr("height", 100),
+      slider = new simpleSlider();
 
-      slider.width(200).x(30).y(200).value(1.0).event(function(){
+      // The war took 72 months. Therefore every month has a value of 1.0/72
+      month = 1.0 / 72
 
-          // Slider value is between 0 and 1
-          if (slider.value() > 0.5){
-              color_updater("orange")
-          }
-          else {
-            color_updater("blue")
-          }
+      slider.width(400).x(20).y(10).value(1.0).event(function(){
+
+        // Slider value is between 0 and 1
+        if (slider.value() > 0.5){
+            color_updater("orange")
+        }
+        else {
+          color_updater("blue")
+        }
       });
 
       svg.call(slider);
