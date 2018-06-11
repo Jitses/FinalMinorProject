@@ -5,11 +5,6 @@
   * 5-5-2018
   */
 
-// linken bar chart met map:
-// check met d3 maps welk land er aan geklikt wordt.
-// Vervolgens loopen over de dataset totdat je hetzelfde land tegenkomt
-// Vervolgens de index opslaan van de loop en dat land van kleur veranderen
-
 // http://datamaps.github.io/
 window.onload = function(){
     var map = new Datamap({
@@ -160,7 +155,7 @@ window.onload = function(){
           var range_min_x = 75;
           var range_max_x = 800;
           var range_min_y = 400;
-          var range_max_y = 100;
+          var range_max_y = 10;
 
           // Create x scale using x domain and x range
           var xScale = d3.scale.linear()
@@ -365,6 +360,9 @@ function simpleSlider () {
 
     return slider;
 }
+  // Retrieved from http://learnjsdata.com/read_data.html
+  d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/wikiCasualties.json", function(dataset) {
+
   var svg = d3.select("#slider").append("svg").attr("width", 500).attr("height", 100),
       slider = new simpleSlider();
 
@@ -372,6 +370,10 @@ function simpleSlider () {
       month = 1.0 / 72
 
       slider.width(400).x(20).y(10).value(1.0).event(function(){
+
+        if (slider.value() <= month){
+
+        }
 
         // Slider value is between 0 and 1
         if (slider.value() > 0.5){
