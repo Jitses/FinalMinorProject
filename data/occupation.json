@@ -1,29 +1,29 @@
-{"data":[{"Country": "Albania", "Invasion date": "4-39", "Surrender Date": "9-43", "Allied Control Date": "11-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Austria", "Invasion date": "1-39", "Surrender Date": "1-39", "Allied Control Date": "", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Belgium", "Invasion date": "5-40", "Surrender Date": "5-40", "Allied Control Date": "11-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Bulgaria", "Invasion date": "3-41", "Surrender Date": "3-41", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Czechoslovakia", "Invasion date": "3-39", "Surrender Date": "3-39", "Allied Control Date": "4-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Denmark", "Invasion date": "4-40", "Surrender Date": "8-43", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Estonia", "Invasion date": "6-41", "Surrender Date": "6-41", "Allied Control Date": "9-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Finland", "Invasion date": "6-41", "Surrender Date": "6-41", "Allied Control Date": "4-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "France", "Invasion date": "6-40", "Surrender Date": "", "Allied Control Date": "9-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Germany", "Invasion date": "1-39", "Surrender Date": "1-39", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Greece", "Invasion date": "4-41", "Surrender Date": "4-41", "Allied Control Date": "", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Hungary", "Invasion date": "11-40", "Surrender Date": "11-40", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Ireland", "Invasion date": "", "Surrender Date": "", "Allied Control Date": "1-39", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Italy", "Invasion date": "6-40", "Surrender Date": "6-40", "Allied Control Date": "9-43", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Latvia", "Invasion date": "7-41", "Surrender Date": "7-41", "Allied Control Date": "10-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Luxembourg", "Invasion date": "5-40", "Surrender Date": "5-40", "Allied Control Date": "9-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Netherlands", "Invasion date": "5-40", "Surrender Date": "5-40", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Norway", "Invasion date": "4-40", "Surrender Date": "6-40", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Poland", "Invasion date": "9-39", "Surrender Date": "9-39", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Romania", "Invasion date": "11-40", "Surrender Date": "11-40", "Allied Control Date": "8-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Soviet Union", "Invasion date": "6-41", "Surrender Date": "", "Allied Control Date": "9-43", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Spain", "Invasion date": "", "Surrender Date": "", "Allied Control Date": "", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "True"}
-{"Country": "Sweden", "Invasion date": "", "Surrender Date": "", "Allied Control Date": "", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "True"}
-{"Country": "Switzerland", "Invasion date": "", "Surrender Date": "", "Allied Control Date": "", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "True"}
-{"Country": "Turkey", "Invasion date": "", "Surrender Date": "", "Allied Control Date": "2-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "True"}
-{"Country": "United Kingdom", "Invasion date": "", "Surrender Date": "", "Allied Control Date": "1-39", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
-{"Country": "Yugoslavia", "Invasion date": "4-41", "Surrender Date": "4-41", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}]}
+{"data":[{"Country": "Albania", "Invasion Date": "4-39", "Surrender Date": "9-43", "Allied Control Date": "11-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Austria", "Invasion Date": "1-39", "Surrender Date": "1-39", "Allied Control Date": "", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Belgium", "Invasion Date": "5-40", "Surrender Date": "5-40", "Allied Control Date": "11-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Bulgaria", "Invasion Date": "3-41", "Surrender Date": "3-41", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Czechoslovakia", "Invasion Date": "3-39", "Surrender Date": "3-39", "Allied Control Date": "4-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Denmark", "Invasion Date": "4-40", "Surrender Date": "8-43", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Estonia", "Invasion Date": "6-41", "Surrender Date": "6-41", "Allied Control Date": "9-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Finland", "Invasion Date": "6-41", "Surrender Date": "6-41", "Allied Control Date": "4-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "France", "Invasion Date": "6-40", "Surrender Date": "", "Allied Control Date": "9-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Germany", "Invasion Date": "1-39", "Surrender Date": "1-39", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Greece", "Invasion Date": "4-41", "Surrender Date": "4-41", "Allied Control Date": "", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Hungary", "Invasion Date": "11-40", "Surrender Date": "11-40", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Ireland", "Invasion Date": "", "Surrender Date": "", "Allied Control Date": "1-39", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Italy", "Invasion Date": "6-40", "Surrender Date": "6-40", "Allied Control Date": "9-43", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Latvia", "Invasion Date": "7-41", "Surrender Date": "7-41", "Allied Control Date": "10-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Luxembourg", "Invasion Date": "5-40", "Surrender Date": "5-40", "Allied Control Date": "9-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Netherlands", "Invasion Date": "5-40", "Surrender Date": "5-40", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Norway", "Invasion Date": "4-40", "Surrender Date": "6-40", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Poland", "Invasion Date": "9-39", "Surrender Date": "9-39", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Romania", "Invasion Date": "11-40", "Surrender Date": "11-40", "Allied Control Date": "8-44", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Soviet Union", "Invasion Date": "6-41", "Surrender Date": "", "Allied Control Date": "9-43", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Spain", "Invasion Date": "", "Surrender Date": "", "Allied Control Date": "", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "True"}
+{"Country": "Sweden", "Invasion Date": "", "Surrender Date": "", "Allied Control Date": "", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "True"}
+{"Country": "Switzerland", "Invasion Date": "", "Surrender Date": "", "Allied Control Date": "", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "True"}
+{"Country": "Turkey", "Invasion Date": "", "Surrender Date": "", "Allied Control Date": "2-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "True"}
+{"Country": "United Kingdom", "Invasion Date": "", "Surrender Date": "", "Allied Control Date": "1-39", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}
+{"Country": "Yugoslavia", "Invasion Date": "4-41", "Surrender Date": "4-41", "Allied Control Date": "5-45", "Invaded": "False", "Surrendered": "False", "Liberated": "False", "Neutral": "False"}]}
 /* http://www.historyplace.com/worldwar2/timeline/ww2time.htm */
 /* https://en.wikipedia.org/wiki/World_War_II_by_country */

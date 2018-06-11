@@ -8,3 +8,11 @@
 - Discussed the problem that when a country is partly occupied, how I will show this on the map.
   Solution: another colour or stripes in country than when it is fully taken over by the Germans.
 - Worked on the linked interaction between my map and bar chart. Does not work optimally yet.
+
+# 11-6-2018
+- Retrieved a dataset from Wikipedia of when countries were invaded, surrendered and liberated.
+- Put this dataset in JSON format by hand/manually.
+- Asked Sascha how I should use the data structure with the draggable timeline,
+to show the right colours on the map. Got to a solution to use a custom labelled monthly timeline.
+The timeline will return a date when dragged. The dates are monthly, so for 1939-1945 there are 72 months/datapoints. When the date is returned, a for loop will use this date to check whether a country has been liberated, surrendered or invaded and give the country the right colour.
+- Interaction between bar chart and map works well now. The bar chart needs some small adjustments: x axis labels and the height is not optimal (sometimes the top corner numbers are on the border of the container, so not completely visible).

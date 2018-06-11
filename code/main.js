@@ -5,6 +5,11 @@
   * 5-5-2018
   */
 
+// Datum van de timeline wordt gereturned. Vervolgens loopen over alle landen. Kijken of de Datum
+// van de bevrijding is geweest, vervolgens de surrender, vervolgens de invasion. Het land wordt dan gekleurd op de juiste manier.
+// data kunnen makkelijk vergeken worden als ik 0-72 gebruik (er zijn 72 maanden van 1939-1945) als data.
+
+
 // http://datamaps.github.io/
 window.onload = function(){
     var map = new Datamap({
@@ -360,8 +365,6 @@ function simpleSlider () {
 
     return slider;
 }
-  // Retrieved from http://learnjsdata.com/read_data.html
-  d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/occupation.json", function(dataset) {
 
     var svg = d3.select("#slider").append("svg").attr("width", 500).attr("height", 100),
         slider = new simpleSlider();
@@ -371,9 +374,59 @@ function simpleSlider () {
 
         slider.width(400).x(20).y(10).value(1.0).event(function(){
 
-          if (slider.value() <= month){
-            console.log(dataset)
+          // Checks what state country is in and updates it accordingly with
+          // the right colour
+          function DateTerritoryColourUpdater(multiplier){
+
+          // Retrieved from http://learnjsdata.com/read_data.html
+          d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/occupation.json", function(dataset) {
+
+          // If the month is 1-1939
+          if (slider.value() <= month*multiplier){
+            console.log(dataset.data)
+
+            // Loop over all countries
+            for (i = 0; i < dataset.data.length; i++){
+
+                if (dataset.data[i]["Neutral"] == "True"){
+                  // Set colour of country to neutral colour
+                  return 0
+                }
+                else if (dataset.data[i]["Surrender Date"] == "1-39"){
+                  dataset.data[i]["Surrendered"] = "True"
+                  // Set colour of country to surrendered (Nazi Territory)
+
+                }
+                else if (dataset.data[i]["Invasion Date"] == "1-39"){
+                  dataset.data[i]["Invaded"] = "True"
+                  // Set colour of country to invaded
+
+                }
+                else if (dataset.data[i]["Allied Control Date"] == "1-39"){
+                  dataset.data[i]["Liberated"] = "True"
+                  // Set colour of country to liberated (Allied Territory)
+
+                }
+                else if (dataset.data[i]["Liberated"] == "True"){
+                  // Set colour of country to liberated (Allied Territory)
+
+                }
+                else if (dataset.data[i]["Surrendered"] == "True"){
+                  // Set colour of country to surrendered (Nazi Territory)
+
+                }
+                else if (dataset.data[i]["Invaded"] == "True"){
+                  // Set colour of country to invaded
+
+                }
+                else{
+                  // Set default colour
+                }
+
+            }
           }
+          }
+
 
           // Slider value is between 0 and 1
           if (slider.value() > 0.5){
@@ -382,6 +435,7 @@ function simpleSlider () {
           else {
             color_updater("blue")
           }
+
         });
 
         svg.call(slider);
