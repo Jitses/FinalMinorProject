@@ -16,7 +16,7 @@ window.onload = function(){
     element: document.getElementById('containerMap'),
     projection: 'mercator',
     fills: {
-      defaultFill: "#e34a33"
+      defaultFill: "grey"
     },
     scope: 'world',
 
@@ -406,7 +406,6 @@ function color_updater(colorinput, country){
                     else if (dataset.data[i]['Invasion Date'] <= currentMonth){
                         color_updater("#f4a582", dataset.data[i]['Country'])
                     }
-
                   }
             })
           svg.call(slider);
