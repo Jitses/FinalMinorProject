@@ -16,7 +16,7 @@ window.onload = function(){
     element: document.getElementById('containerMap'),
     projection: 'mercator',
     fills: {
-      defaultFill: "grey"
+      defaultFill: "#f7f7f7"
     },
     scope: 'world',
 
@@ -390,21 +390,24 @@ function color_updater(colorinput, country){
 
                     // At start of war, set default allied colour for all countries
                     if (currentMonth < 1){
-                          color_update("#0571b0", dataset.data[i]['Country'])
+                        color_update("#0571b0", dataset.data[i]['Country'])
                     }
                     else if (dataset.data[i]['Neutral'] == "True"){
                         color_updater("#92c5de", dataset.data[i]['Country'])
                     }
-                    else if (dataset.data[i]['Allied Control Date'] <= currentMonth){
+                    else if (dataset.data[i]['Allied Control Date'] <= currentMonth && dataset.data[i]['Allied Control Date'] != ""){
 
                         color_updater("#0571b0", dataset.data[i]['Country'])
                     }
-                    else if (dataset.data[i]['Surrender Date'] <= currentMonth){
+                    else if (dataset.data[i]['Surrender Date'] <= currentMonth && dataset.data[i]['Surrender Date'] != ""){
                         color_updater("#ca0020", dataset.data[i]['Country'])
 
                     }
-                    else if (dataset.data[i]['Invasion Date'] <= currentMonth){
+                    else if (dataset.data[i]['Invasion Date'] <= currentMonth && dataset.data[i]['Invasion Date'] != ""){
                         color_updater("#f4a582", dataset.data[i]['Country'])
+                    }
+                    else{
+                        color_updater("#f7f7f7", dataset.data[i]['Country'])
                     }
                   }
             })
