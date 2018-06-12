@@ -387,7 +387,12 @@ function color_updater(colorinput, country){
                 slider.width(400).x(20).y(10).value(1.0).event(function(){
                   currentMonth = slider.value()
                   for (i = 0; i < dataset.data.length; i++){
-                    if (dataset.data[i]['Neutral'] == "True"){
+
+                    // At start of war, set default colour for all countries
+                    if (slider.value < 1){
+                          color_update("Grey", dataset.data[i]['Country'])
+                    }
+                    else if (dataset.data[i]['Neutral'] == "True"){
                         color_updater("#92c5de", dataset.data[i]['Country'])
                     }
                     else if (dataset.data[i]['Allied Control Date'] <= currentMonth){
@@ -401,6 +406,7 @@ function color_updater(colorinput, country){
                     else if (dataset.data[i]['Invasion Date'] <= currentMonth){
                         color_updater("#f4a582", dataset.data[i]['Country'])
                     }
+
                   }
             })
           svg.call(slider);
