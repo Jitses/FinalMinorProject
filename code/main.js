@@ -305,7 +305,7 @@ function simpleSlider () {
 
         //  Draggable circle to represent the current value
         var valueCircle = selection.append("circle")
-            .attr("cx", x + (width * value))
+            .attr("cx", x)
             .attr("cy", y)
             .attr("r", 8)
             .style({
@@ -380,7 +380,7 @@ function color_updater(colorinput, country){
           // http://www.historyplace.com/worldwar2/timeline/ww2time.htm
           // https://en.wikipedia.org/wiki/World_War_II_by_country */
           d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/occupation.json", function(dataset) {
-            console.log(dataset.data[0]['Neutral'])
+            console.log(dataset.data)
             var svg = d3.select("#slider").append("svg").attr("width", 500).attr("height", 100),
                 slider = new simpleSlider();
 
@@ -389,7 +389,7 @@ function color_updater(colorinput, country){
                   for (i = 0; i < dataset.data.length; i++){
 
                     // At start of war, set default allied colour for all countries
-                    if (slider.value < 1){
+                    if (currentMonth < 1){
                           color_update("#0571b0", dataset.data[i]['Country'])
                     }
                     else if (dataset.data[i]['Neutral'] == "True"){
