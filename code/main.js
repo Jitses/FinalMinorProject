@@ -388,7 +388,7 @@ function color_updater(colorinput, country){
                   currentMonth = slider.value()
                   for (i = 0; i < dataset.data.length; i++){
 
-                    // At start of war, set default colour for all countries
+                    // At start of war, set default allied colour for all countries
                     if (slider.value < 1){
                           color_update("#0571b0", dataset.data[i]['Country'])
                     }
