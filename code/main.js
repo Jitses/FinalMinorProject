@@ -390,7 +390,7 @@ function color_updater(colorinput, country){
 
                     // At start of war, set default colour for all countries
                     if (slider.value < 1){
-                          color_update("Grey", dataset.data[i]['Country'])
+                          color_update("#0571b0", dataset.data[i]['Country'])
                     }
                     else if (dataset.data[i]['Neutral'] == "True"){
                         color_updater("#92c5de", dataset.data[i]['Country'])
