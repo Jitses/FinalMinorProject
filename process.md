@@ -16,3 +16,10 @@
 to show the right colours on the map. Got to a solution to use a custom labelled monthly timeline.
 The timeline will return a date when dragged. The dates are monthly, so for 1939-1945 there are 72 months/datapoints. When the date is returned, a for loop will use this date to check whether a country has been liberated, surrendered or invaded and give the country the right colour.
 - Interaction between bar chart and map works well now. The bar chart needs some small adjustments: x axis labels and the height is not optimal (sometimes the top corner numbers are on the border of the container, so not completely visible).
+
+# 12-6-2018
+- Today I worked on the colouring of the map (connected to the draggable slider).
+The slider + map colouring does not work optimally, in a sense that it only works well when
+the slider is moved slowly. I talked to Sascha about this. We agreed that it would be better
+to instead make a play button, that when clicked, colours the map automatically over time
+(monthly, 1939-1945) and shows which month it is at when playing.
