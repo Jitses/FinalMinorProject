@@ -47,24 +47,7 @@ window.onload = function(){
       });
     }
   });
-    // Source: My Data processing week 5 repository
-    // Updates colors, used in the different color themes
-    function color_updater(colorinput){
-      var countries = Datamap.prototype.worldTopo.objects.world.geometries;
 
-      for (var j = 0; j < countries.length; j++) {
-
-        var country_code = countries[j].id
-
-        // https://stackoverflow.com/questions/40423615/dynamically-updating-datamaps-fill-color-not-working-using-variable-as-country-k
-        var color = colorinput
-        var country_color = {};
-        country_color[country_code] = color
-
-        // https://github.com/markmarkoh/datamaps/releases/tag/v0.2.2
-        map.updateChoropleth(country_color);
-        }
-      }
 
     // Some of the code of the barchart was retrieved from my own Data Processing repository
     // and from  https://www.digitalocean.com/community/tutorials/getting-started-with-data-visualization-using-javascript-and-the-d3-library
@@ -367,19 +350,58 @@ function simpleSlider () {
     return slider;
 }
 
+// Source: My Data processing week 5 repository
+// Updates colors, used in the different color themes
+function color_updater(colorinput, country){
+  var countries = Datamap.prototype.worldTopo.objects.world.geometries;
+
+  for (var j = 0; j < countries.length; j++) {
+
+    var countryName = countries[j].properties.name
+
+    // If country was found
+    if (countryName == country)
+    {
+      countryID = countries[j].id
+      // https://stackoverflow.com/questions/40423615/dynamically-updating-datamaps-fill-color-not-working-using-variable-as-country-k
+      var color = colorinput
+      var country_color = {};
+      country_color[countryID] = color
+    }
+
+
+    // https://github.com/markmarkoh/datamaps/releases/tag/v0.2.2
+    map.updateChoropleth(country_color);
+    }
+  }
+
           // Retrieved from http://learnjsdata.com/read_data.html
           // Datasets used:
           // http://www.historyplace.com/worldwar2/timeline/ww2time.htm
           // https://en.wikipedia.org/wiki/World_War_II_by_country */
           d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/occupation.json", function(dataset) {
-            console.log(dataset.data[0])
+            console.log(dataset.data[0]['Neutral'])
             var svg = d3.select("#slider").append("svg").attr("width", 500).attr("height", 100),
                 slider = new simpleSlider();
 
                 slider.width(400).x(20).y(10).value(1.0).event(function(){
                   currentMonth = slider.value()
-                  console.log(currentMonth)
+                  for (i = 0; i < dataset.data.length; i++){
+                    if (dataset.data[i]['Neutral'] == "True"){
+                        color_updater("#92c5de", dataset.data[i]['Country'])
+                    }
+                    else if (dataset.data[i]['Allied Control Date'] <= currentMonth){
 
+                        color_updater("#0571b0", dataset.data[i]['Country'])
+                    }
+                    else if (dataset.data[i]['Surrender Date'] <= currentMonth){
+                        color_updater("#ca0020", dataset.data[i]['Country'])
+
+                    }
+                    else if (dataset.data[i]['Invasion Date'] <= currentMonth){
+                        color_updater("#f4a582", dataset.data[i]['Country'])
+                    }
+                  }
             })
           svg.call(slider);
         });
