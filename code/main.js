@@ -367,16 +367,14 @@ function simpleSlider () {
     return slider;
 }
 
-
-
-
           // Retrieved from http://learnjsdata.com/read_data.html
+          // Datasets used:
+          // http://www.historyplace.com/worldwar2/timeline/ww2time.htm
+          // https://en.wikipedia.org/wiki/World_War_II_by_country */
           d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/occupation.json", function(dataset) {
-
+            console.log(dataset.data[0])
             var svg = d3.select("#slider").append("svg").attr("width", 500).attr("height", 100),
                 slider = new simpleSlider();
-
-
 
                 slider.width(400).x(20).y(10).value(1.0).event(function(){
                   currentMonth = slider.value()
