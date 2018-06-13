@@ -20,6 +20,12 @@ id that fit in the data (did not collide with another variable name). Cyprus ID 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+
+    <!-- https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-play -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- https://codepen.io/MarioDesigns/pen/ENevMJ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <script src="/datamaps.world.min.js"></script>
     <script src="/main.js"></script>
@@ -30,15 +36,25 @@ id that fit in the data (did not collide with another variable name). Cyprus ID 
        <div id="counter"></div>
 
        <!-- https://css-tricks.com/making-pure-css-playpause-button/ -->
-       <button id='buttonPlay'></button>
-       <!-- https://codepen.io/damdeez/pen/voplq -->
-       <div id="mainCircle">
-        <div id="innerCircle">STOP</div>
-      </div>
+       <!-- <button id='buttonPlay'></button> -->
 
+       <!-- https://codepen.io/MarioDesigns/pen/ENevMJ -->
+       <div class="containerButton">
+         <div class="btn play">
+               <!-- https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-play -->
+               <i class="fa fa-play"></i>
+               <i class="fa fa-pause"></i>
+  	     </div>
+       </div>
        <div id="containerBarChart"></div>
        <div id="containerMap"></div>
-       <div id="slider"></div>
+       <div class="scroller">
+         <!-- https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-chevron-circle-down -->
+         <i class="fa fa-chevron-circle-down" style="font-size:36px"></i>
+       </div>
+    </div>
+    <div id=sunburstContainer>
+      <h1> Sunburst will be here </h1>
     </div>
 
   </body>

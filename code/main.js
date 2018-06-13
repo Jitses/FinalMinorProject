@@ -201,7 +201,7 @@ window.onload = function(){
             .scale(yScale)
 
             // Set orient
-            .orient("left")
+            .orient("left");
 
           // Create x axis
           var xAxis = d3.svg.axis()
@@ -236,231 +236,125 @@ window.onload = function(){
             .attr("transform", "translate(" + 75 +", 0)")
 
             // call y axis
-            .call(yAxis);
+            .call(yAxis)
 
             // All done
-            return 0
+            return 0;
           }
 
 
         else{
-          index = index + 1
+          index = index + 1;
         }
       }
       document.getElementById('containerBarChart').innerHTML = "No data for the country";
     });
     }
 
-// //https://bl.ocks.org/Lulkafe/3832d628340038d9484fbd9edb705e01
-// function simpleSlider () {
-//
-//     var width = 100,
-//         value = 0.5, /* Domain assumes to be [0 - 1] */
-//         event,
-//         x = 0,
-//         y = 0;
-//
-//     function slider (selection) {
-//
-//         //Line to represent the current value
-//         var valueLine = selection.append("line")
-//             .attr("x1", x)
-//             .attr("x2", x + (width * value))
-//             .attr("y1", y)
-//             .attr("y2", y)
-//             .style({stroke: "#51CB3F",
-//                     "stroke-linecap": "round",
-//                     "stroke-width": 6 });
-//
-//         //Line to show the remaining value
-//         var emptyLine = selection.append("line")
-//             .attr("x1", x + (width * value))
-//             .attr("x2", x + width)
-//             .attr("y1", y)
-//             .attr("y2", y)
-//             .style({
-//                 "stroke": "#ECECEC",
-//                 "stroke-linecap": "round",
-//                 "stroke-width": 6
-//             });
-//
-//         var drag = d3.behavior.drag().on("drag", function() {
-//             var newX = d3.mouse(this)[0];
-//
-//             if (newX < x)
-//                 newX = x;
-//             else if (newX > x + width)
-//                 newX = x + width;
-//
-//             value = (newX - x) / width;
-//             valueCircle.attr("cx", newX);
-//             valueLine.attr("x2", x + (width * value));
-//             emptyLine.attr("x1", x + (width * value));
-//
-//             if (event)
-//                 event();
-//
-//             d3.event.sourceEvent.stopPropagation();
-//         })
-//
-//         //  Draggable circle to represent the current value
-//         var valueCircle = selection.append("circle")
-//             .attr("cx", x)
-//             .attr("cy", y)
-//             .attr("r", 8)
-//             .style({
-//                 "stroke": "black",
-//                 "stroke-width": 1.0,
-//                 "fill": "white"
-//             })
-//             .call(drag);
-//     }
-//
-//
-//     slider.x = function (val) {
-//         x = val;
-//         return slider;
-//     }
-//
-//     slider.y = function (val) {
-//         y = val;
-//         return slider;
-//     }
-//
-//     slider.value = function (val) {
-//         if (val) {
-//             value = val;
-//             return slider;
-//         } else {
-//             // 84 months from 1939 until 1945
-//             return value * 84;
-//         }
-//     }
-//
-//     slider.width = function (val) {
-//         width = val;
-//         return slider;
-//     }
-//
-//     slider.event = function (val) {
-//         event = val;
-//         return slider;
-//     }
-//
-//     return slider;
-// }
-
 // Source: My Data processing week 5 repository
 // Updates colors, used in the different color themes
-function color_updater(colorinput, country){
-  var countries = Datamap.prototype.worldTopo.objects.world.geometries;
+  function color_updater(colorinput, country){
+    var countries = Datamap.prototype.worldTopo.objects.world.geometries;
 
-  for (var j = 0; j < countries.length; j++) {
+    for (var j = 0; j < countries.length; j++) {
 
-    var countryName = countries[j].properties.name
+      var countryName = countries[j].properties.name
 
-    // If country was found
-    if (countryName == country)
-    {
-      countryID = countries[j].id
-      // https://stackoverflow.com/questions/40423615/dynamically-updating-datamaps-fill-color-not-working-using-variable-as-country-k
-      var color = colorinput
-      var country_color = {};
-      country_color[countryID] = color
-    }
+      // If country was found
+      if (countryName == country)
+      {
+        countryID = countries[j].id
+        // https://stackoverflow.com/questions/40423615/dynamically-updating-datamaps-fill-color-not-working-using-variable-as-country-k
+        var color = colorinput
+        var country_color = {};
+        country_color[countryID] = color
+      }
 
 
-    // https://github.com/markmarkoh/datamaps/releases/tag/v0.2.2
-    map.updateChoropleth(country_color);
-    }
+      // https://github.com/markmarkoh/datamaps/releases/tag/v0.2.2
+      map.updateChoropleth(country_color);
+      }
   }
 
-          // Retrieved from http://learnjsdata.com/read_data.html
-          // Datasets used:
-          // http://www.historyplace.com/worldwar2/timeline/ww2time.htm
-          // https://en.wikipedia.org/wiki/World_War_II_by_country */
-          d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/occupation.json", function(dataset) {
+  // Retrieved from http://learnjsdata.com/read_data.html
+  // Datasets used:
+  // http://www.historyplace.com/worldwar2/timeline/ww2time.htm
+  // https://en.wikipedia.org/wiki/World_War_II_by_country */
+  d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/occupation.json", function(dataset) {
 
-            // var svg = d3.select("#slider").append("svg").attr("width", 500).attr("height", 100),
-            //     // slider = new simpleSlider();
-                //
-                //
-                // slider.width(400).x(20).y(10).value(1.0).event(function(){
-                //   if (event.movementX == 0){
-                //
-                //
-                //
-                //
-                //   // console.log(event)
-                //   currentMonth = slider.value()
+    buttonPlay = document.getElementsByClassName('btn.play')
 
-                buttonPlay = document.getElementById('buttonPlay')
-                buttonStop = document.getElementById('mainCircle')
+    // https://stackoverflow.com/questions/37187504/javascript-second-counter
+    var month = 0;
+    // Runs from month 1 until 84
+    var monthDataCounter = 0;
+    // Initial year
+    var year = 1939;
 
-                // https://stackoverflow.com/questions/37187504/javascript-second-counter
-                var month = 0;
-                // Runs from month 1 until 84
-                var monthDataCounter = 0
-                // Initial year
-                var year = 1939
-                var counter = document.getElementById('counter');
+    var counter = document.getElementById('counter');
 
-                function incrementSeconds() {
-                  if (counter.innerText == "12-1945"){
-                    clearInterval(startTimeframe);
-                  }
+    function incrementSeconds() {
+      if (counter.innerText == "12-1945"){
+        clearInterval(startTimeframe);
+      }
+      if (month == 12){
+        month = 1
+        year += 1
+        counter.innerText = month + "-" + year;
+      }
+      else{
+        month += 1
+        counter.innerText = month + "-" + year;
+      }
+      monthDataCounter += 1
 
-                  if (month == 12){
-                    month = 1
-                    year += 1
-                    counter.innerText = month + "-" + year;
-                  }
-                  else{
-                    month += 1
-                    counter.innerText = month + "-" + year;
-                  }
-                  monthDataCounter += 1
-
-                }
-
-                buttonPlay.onclick = function() {
-                  var startTimeframe = setInterval(incrementSeconds, 3000);
-                }
-
-                // https://stackoverflow.com/questions/109086/stop-setinterval-call-in-javascript
-                // Stop timer
-                buttonStop.onclick = function() {
-                  clearInterval(startTimeframe);
-                }
-
-
-                // document.getElementById("counter").innerHTML = Math.round(currentMonth)
-                //
-                //   for (i = 0; i < dataset.data.length; i++){
-                //
-                //     // At start of war, set default allied colour for all countries
-                //     if (currentMonth < 1){
-                //         color_update("#0571b0", dataset.data[i]['Country'])
-                //     }
-                //     else if (dataset.data[i]['Neutral'] == "True"){
-                //         color_updater("#92c5de", dataset.data[i]['Country'])
-                //     }
-                //     else if (dataset.data[i]['Allied Control Date'] <= currentMonth && dataset.data[i]['Allied Control Date'] != ""){
-                //
-                //         color_updater("#0571b0", dataset.data[i]['Country'])
-                //     }
-                //     else if (dataset.data[i]['Surrender Date'] <= currentMonth && dataset.data[i]['Surrender Date'] != ""){
-                //         color_updater("#ca0020", dataset.data[i]['Country'])
-                //
-                //     }
-                //     else if (dataset.data[i]['Invasion Date'] <= currentMonth && dataset.data[i]['Invasion Date'] != ""){
-                //         color_updater("#f4a582", dataset.data[i]['Country'])
-                //     }
-                //     else{
-                //         color_updater("#f7f7f7", dataset.data[i]['Country'])
-                //     }
-                //   }
-              })
-
-          // svg.call(slider);
+      for (i = 0; i < dataset.data.length; i++){
+        // At start of war, set default allied colour for all countries
+        if (monthDataCounter < 1){
+            color_update("#0571b0", dataset.data[i]['Country'])
         }
+        else if (dataset.data[i]['Neutral'] == "True"){
+            color_updater("#92c5de", dataset.data[i]['Country'])
+        }
+        else if (dataset.data[i]['Allied Control Date'] <= monthDataCounter && dataset.data[i]['Allied Control Date'] != ""){
+
+            color_updater("#0571b0", dataset.data[i]['Country'])
+        }
+        else if (dataset.data[i]['Surrender Date'] <= monthDataCounter && dataset.data[i]['Surrender Date'] != ""){
+            color_updater("#ca0020", dataset.data[i]['Country'])
+
+        }
+        else if (dataset.data[i]['Invasion Date'] <= monthDataCounter && dataset.data[i]['Invasion Date'] != ""){
+            color_updater("#f4a582", dataset.data[i]['Country'])
+        }
+        else{
+            color_updater("#f7f7f7", dataset.data[i]['Country'])
+        }
+      }
+    }
+
+    // https://codepen.io/MarioDesigns/pen/ENevMJ
+    // On click button, changes class button from play to pause and the reverse
+    $('body').on('click', '.btn', function(e)   {
+  	e.preventDefault();
+  	if ( $(this).hasClass('play') ) {
+      timeFrame = setInterval(incrementSeconds, 1000);
+  		$(this).removeClass('play');
+  		$(this).addClass('pause');
+  	} else {
+      // https://stackoverflow.com/questions/109086/stop-setinterval-call-in-javascript
+      clearInterval(timeFrame);
+  		$(this).removeClass('pause');
+  		$(this).addClass('play');
+  	}
+    });
+
+  });
+
+  // https://stackoverflow.com/questions/2659354/jquery-scroll-down-page-a-set-increment-in-pixels-on-click
+  // Current position on page
+    $(".fa.fa-chevron-circle-down").click(function(event){
+        $('html, body').animate({scrollTop: '+=1000px'}, 800);
+    });
+
+}

@@ -23,3 +23,11 @@ The slider + map colouring does not work optimally, in a sense that it only work
 the slider is moved slowly. I talked to Sascha about this. We agreed that it would be better
 to instead make a play button, that when clicked, colours the map automatically over time
 (monthly, 1939-1945) and shows which month it is at when playing.
+
+# 13-6-2018
+- Worked on the play button today. Built a play/pause button that can play and pause the timeframe 1939-1945.
+When the timeframe is played, the map shows the colours of the German territory expansion and the allied takeback.
+- I also added a scroll button. When clicked, the page will scroll down to where the sunburst will be.
+- I will have to make a legend for the map, to show what each colour means.
+Furthermore I have to fix the bar chart bug. Sometimes half of the top number on the y axis disappears.
+- Furthermore, I want to start working on organizing the data of the sunburst.
