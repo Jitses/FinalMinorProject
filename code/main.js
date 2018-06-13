@@ -395,27 +395,44 @@ function color_updater(colorinput, country){
                 //   currentMonth = slider.value()
 
                 buttonPlay = document.getElementById('buttonPlay')
-                counter = 0
-                // https://jsfiddle.net/Daniel_Hug/pvk6p/
-                function add() {
-                    counter++;
-                }
-                function timer() {
-                    setTimeout(add, 1000);
+                buttonStop = document.getElementById('mainCircle')
+
+                // https://stackoverflow.com/questions/37187504/javascript-second-counter
+                var month = 0;
+                // Runs from month 1 until 84
+                var monthDataCounter = 0
+                // Initial year
+                var year = 1939
+                var counter = document.getElementById('counter');
+
+                function incrementSeconds() {
+                  if (counter.innerText == "12-1945"){
+                    clearInterval(startTimeframe);
+                  }
+
+                  if (month == 12){
+                    month = 1
+                    year += 1
+                    counter.innerText = month + "-" + year;
+                  }
+                  else{
+                    month += 1
+                    counter.innerText = month + "-" + year;
+                  }
+                  monthDataCounter += 1
 
                 }
-                timer();
 
-
-                // https://stackoverflow.com/questions/18121766/adding-start-stop-and-reset-buttons-for-a-timer
-                buttonPlay.onclick = timer();
-                buttonPlay.onclick = function(){
-                  counter = 0
-                  timer()
+                buttonPlay.onclick = function() {
+                  var startTimeframe = setInterval(incrementSeconds, 3000);
                 }
 
+                // https://stackoverflow.com/questions/109086/stop-setinterval-call-in-javascript
+                // Stop timer
+                buttonStop.onclick = function() {
+                  clearInterval(startTimeframe);
+                }
 
-                console.log(counter)
 
                 // document.getElementById("counter").innerHTML = Math.round(currentMonth)
                 //
