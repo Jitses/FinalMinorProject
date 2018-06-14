@@ -1,0 +1,74 @@
+// https://www.thoughtco.com/world-war-ii-battles-2361453
+// https://en.wikipedia.org/wiki/Battle_of_Dunkirk
+// https://en.wikipedia.org/wiki/Battle_of_Greece
+// https://bl.ocks.org/mbostock/4348373
+
+{
+  "name": "battles",
+  "children": [
+    {
+      "name": "Atlantic Ocean",
+      "children": [
+        {
+          "name": "Battle of the Atlantic (9-1939 until 5-1945)",
+          "children": [
+
+              {"name": "Casualties Allied (total killed)", "size": 72000},
+              {"name": "Casualties Axis (total killed)", "size": 30000}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "France",
+      "children": [
+        {
+          "name": "Battle and Evacuation of Dunkirk (5-1940 until 6-1940)",
+          "children": [
+
+              {"name": "Casualties Allied (total killed and wounded)", "size": 61744},
+              {"name": "Casualties Axis (total killed and wounded)", "size": 20000}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "United Kingdom",
+      "children": [
+        {
+          "name": "Battle of Britain (7-1940 until 10-1940)",
+          "children": [
+
+              {"name": "Casualties Allied (total killed)", "size": 544},
+              {"name": "Casualties Axis (total killed)", "size": 2698}
+          ]
+        }
+
+      ]
+    }
+    {
+      "name": "Greece",
+      "children": [
+        {
+          "name": "Battle of Greece (4-1941)",
+          "children": [
+
+              {"name": "Casualties Allied (total killed)", "size": 14311 },
+              {"name": "Casualties Axis (total killed)", "size": 14854 }
+          ]
+        },
+        {
+          "name": "Battle of Crete (5-1941 until 6-1941)",
+          "children": [
+
+              {"name": "Casualties Allied (total killed)", "size": 4000},
+              {"name": "Casualties Axis (total killed)", "size": 4041}
+          ]
+        }
+
+
+      ]
+    }
+
+  ]
+}

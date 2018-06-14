@@ -31,3 +31,9 @@ When the timeframe is played, the map shows the colours of the German territory 
 - I will have to make a legend for the map, to show what each colour means.
 Furthermore I have to fix the bar chart bug. Sometimes half of the top number on the y axis disappears.
 - Furthermore, I want to start working on organizing the data of the sunburst.
+
+# 14-6-2018
+- Tried to organize the data for the sunburst. The wikipedia source is not useable, even not with a scraper.
+Therefore I will use https://www.thoughtco.com/world-war-ii-battles-2361453. It has an less extensive list of battles, compared to wikipedia.
+However, the data is easier to retrieve. The data will be retrieved manually (started today already) and organized manually.
+- I also looked at a sunburst tutorial today. I have much more insight now in how it works.
