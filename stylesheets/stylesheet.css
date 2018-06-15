@@ -8,6 +8,7 @@
 } */
 
 #containerMap{
+  color: black;
   width: 50%;
   height: 420px;
   position: absolute;
@@ -43,10 +44,10 @@
 
 /* retrieved from http://bl.ocks.org/Caged/6476579 */
 rect{
-  fill: orange;
+  fill: #630808;
 }
 rect:hover{
-  fill: blue
+  fill: #333;
 }
 /*
  * retrieved from https://css-tricks.com/snippets/css/text-rotation/
