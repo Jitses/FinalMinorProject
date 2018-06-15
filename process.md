@@ -37,3 +37,9 @@ Furthermore I have to fix the bar chart bug. Sometimes half of the top number on
 Therefore I will use https://www.thoughtco.com/world-war-ii-battles-2361453. It has an less extensive list of battles, compared to wikipedia.
 However, the data is easier to retrieve. The data will be retrieved manually (started today already) and organized manually.
 - I also looked at a sunburst tutorial today. I have much more insight now in how it works.
+
+# 15-6-2018
+- Presented today.
+- Afterwards organized my Github repository.
+- Fixed a map bug.
+- Changed layout coloring of bar chart.
