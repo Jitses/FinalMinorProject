@@ -2,9 +2,21 @@
 // https://en.wikipedia.org/wiki/Battle_of_Dunkirk
 // https://en.wikipedia.org/wiki/Battle_of_Greece
 // https://bl.ocks.org/mbostock/4348373
+// https://en.wikipedia.org/wiki/Siege_of_Leningrad
+// https://en.wikipedia.org/wiki/Third_Battle_of_Kharkov
+// https://en.wikipedia.org/wiki/Warsaw_Ghetto_Uprising
+// https://en.wikipedia.org/wiki/Operation_Chastise
+// https://en.wikipedia.org/wiki/Schweinfurt%E2%80%93Regensburg_mission
+// https://en.wikipedia.org/wiki/Battle_of_Monte_Cassino
+// https://en.wikipedia.org/wiki/Battle_for_Caen
+// https://en.wikipedia.org/wiki/Operation_Cobra
+// https://en.wikipedia.org/wiki/Falaise_Pocket
+// https://en.wikipedia.org/wiki/Operation_Market_Garden
+// https://en.wikipedia.org/wiki/Battle_of_Remagen
+// https://en.wikipedia.org/wiki/Operation_Varsity
 
 {
-  "name": "battles",
+  "name": "Battles",
   "children": [
     {
       "name": "Atlantic Ocean",
@@ -12,7 +24,6 @@
         {
           "name": "Battle of the Atlantic (9-1939 until 5-1945)",
           "children": [
-
               {"name": "Casualties Allied (total killed)", "size": 72000},
               {"name": "Casualties Axis (total killed)", "size": 30000}
           ]
@@ -25,11 +36,68 @@
         {
           "name": "Battle and Evacuation of Dunkirk (5-1940 until 6-1940)",
           "children": [
-
               {"name": "Casualties Allied (total killed and wounded)", "size": 61744},
               {"name": "Casualties Axis (total killed and wounded)", "size": 20000}
           ]
+        },
+        {
+          "name": "Dieppe Raid (8-1942)",
+          "children": [
+            {"name": "Casualties Allied (total killed)", "size": 1027},
+            {"name": "Casualties Axis (total killed)", "size": 311}
+          ]
+        },
+        {
+          "name": "Operation Lila and the Scuttling of the French Fleet (11-1942)",
+          "children": [
+            {"name": "Casualties Allied (total killed)", "size": 12},
+            {"name": "Casualties Axis (total killed)", "size": 0}
+          ]
+        },
+        {
+          "name": "Operation Deadstick (6-1944)",
+          "children": [
+            {"name": "Casualties Allied (total killed)", "size": 2},
+            {"name": "Casualties Axis (total killed)", "size": 0}
+          ]
+        },
+        {
+          "name": "D-Day - Invasion of Normandy (6-1944)",
+          "children": [
+            {"name": "Casualties Allied (total killed)", "size": 10400},
+            {"name": "Casualties Axis (total killed)", "size": 6500}
+          ]
+        },
+        {
+          "name": "The Battle of Caen (6-1944 until 7-1944)",
+          "children": [
+            {"name": "Casualties Allied (total killed)", "size": 50539},
+            {"name": "Casualties Axis (total killed)", "size": 10000}
+          ]
+        },
+        {
+          "name": "Operation Cobra (7-1944)",
+          "children": [
+            {"name": "Casualties Allied (total killed)", "size": 1800},
+            {"name": "Casualties Axis (total killed)", "size": 2500}
+          ]
+        },
+        {
+          "name": "Battle of the Falaise Pocket (8-1944)",
+          "children": [
+            {"name": "Casualties Allied (total killed)", "size": 10829},
+            {"name": "Casualties Axis (total killed)", "size": 12500}
+          ]
+        },
+        {
+          "name": "Operation Dragoon (8-1944 until 9-1944)",
+          "children": [
+            {"name": "Casualties Allied (total killed and wounded)", "size": 17000 },
+            {"name": "Casualties Axis (total killed and wounded)", "size": 17000}
+          ]
         }
+
+
       ]
     },
     {
@@ -38,21 +106,19 @@
         {
           "name": "Battle of Britain (7-1940 until 10-1940)",
           "children": [
-
               {"name": "Casualties Allied (total killed)", "size": 544},
               {"name": "Casualties Axis (total killed)", "size": 2698}
           ]
         }
 
       ]
-    }
+    },
     {
       "name": "Greece",
       "children": [
         {
           "name": "Battle of Greece (4-1941)",
           "children": [
-
               {"name": "Casualties Allied (total killed)", "size": 14311 },
               {"name": "Casualties Axis (total killed)", "size": 14854 }
           ]
@@ -60,13 +126,187 @@
         {
           "name": "Battle of Crete (5-1941 until 6-1941)",
           "children": [
-
               {"name": "Casualties Allied (total killed)", "size": 4000},
               {"name": "Casualties Axis (total killed)", "size": 4041}
           ]
         }
       ]
-    }
+    },
+    {
+      "name": "Soviet Union",
+      "children": [
+        {
+          "name": "Siege of Leningrad (9-1941 until 1-1944)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 1017881 },
+              {"name": "Casualties Axis (total killed)", "size": 579985  }
+          ]
+        },
+        {
+          "name": "Battle of Moscow (10-1941 until 1-1942)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 965000},
+              {"name": "Casualties Axis (total killed)", "size": 324000}
+          ]
+        },
+        {
+          "name": "Battle of Stalingrad (7-1942 until 2-1943)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 478741},
+              {"name": "Casualties Axis (total killed)", "size": 700000}
+          ]
+        },
+        {
+          "name": "Third Battle of Kharkov (2-1943 until 3-1943)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 45219},
+              {"name": "Casualties Axis (total killed)", "size": 4500}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Poland",
+      "children": [
+        {
+          "name": "The Warsaw Ghetto Uprising (4-1943 until 5-1943)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 13000},
+              {"name": "Casualties Axis (total killed)", "size": 300}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "children": [
+        {
+          "name": "Operation Chastise (5-1943)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 53},
+              {"name": "Casualties Axis (total killed)", "size": 1600}
+          ]
+        },
+        {
+          "name": "Operation Gomorrah (7-1943 until 8-1943)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 0},
+              {"name": "Casualties Axis (total killed)", "size": 45000}
+          ]
+        },
+        {
+          "name": "Schweinfurt-Regensburg Raid (8-1943)",
+          "children": [
+              {"name": "Casualties Allied (total killed or missing)", "size": 564},
+              {"name": "Casualties Axis (total killed)", "size": 230}
+          ]
+        },
+        {
+          "name": "Bombing of Dresden (2-1945)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 0},
+              {"name": "Casualties Axis (total killed)", "size": 23850}
+          ]
+        },
+        {
+          "name": "Battle of Remagen (3-1945)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 990},
+              {"name": "Casualties Axis (captured, casualties unknown)", "size": 19000}
+          ]
+        },
+        {
+          "name": "Operation Varsity (3-1945)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 2539},
+              {"name": "Casualties Axis (captured, casualties unknown)", "size": 3500}
+          ]
+        },
+        {
+          "name": "Battle of the Seelow Heights (4-1945)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 30000},
+              {"name": "Casualties Axis (total killed)", "size": 12000}
+          ]
+        },
+        {
+          "name": "Battle of Berlin (4-1945 until 5-1945)",
+          "children": [
+              {"name": "Casualties Allied (total killed and missing)", "size": 81116},
+              {"name": "Casualties Axis (total killed)", "size": 458080}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Italy",
+      "children": [
+        {
+          "name": "Operation Husky (7-1943 until 8-1943)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 23934},
+              {"name": "Casualties Axis (total killed)", "size": 29000}
+          ]
+        },
+        {
+          "name": "Invasion of Italy (9-1943)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 2009},
+              {"name": "Casualties Axis (total killed)", "size": 3500}
+          ]
+        },
+        {
+          "name": "Battle of Anzio (1-1944 until 6-1944)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 7000},
+              {"name": "Casualties Axis (total killed)", "size": 5000}
+          ]
+        },
+        {
+          "name": "Battle of Monte Cassino (1-1944 until 5-1944)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 55000 },
+              {"name": "Casualties Axis (total killed)", "size": 20000}
+          ]
+        }
 
+      ]
+    },
+    {
+      "name": "Norway",
+      "children": [
+        {
+          "name": "Battle of the North Cape (12-1943)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 11},
+              {"name": "Casualties Axis (total killed)", "size": 1932}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Netherlands",
+      "children": [
+        {
+          "name": "Operation Market-Garden (9-1944)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 16263},
+              {"name": "Casualties Axis (total killed)", "size": 8300}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Belgium",
+      "children": [
+        {
+          "name": "Battle of the Bulge (12-1944 until 1-1945)",
+          "children": [
+              {"name": "Casualties Allied (total killed)", "size": 20876},
+              {"name": "Casualties Axis (total killed)", "size": 15652}
+          ]
+        }
+      ]
+    }
   ]
 }
