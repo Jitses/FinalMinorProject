@@ -43,3 +43,9 @@ However, the data is easier to retrieve. The data will be retrieved manually (st
 - Afterwards organized my Github repository.
 - Fixed a map bug.
 - Changed layout coloring of bar chart.
+
+# 18-6-2018
+- Worked on the sunburst today
+- Organised all the battle data
+- Made the sunburst
+- Made the bootstrap menu that changes the sunburst accordingly

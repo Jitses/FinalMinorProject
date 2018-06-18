@@ -128,7 +128,7 @@ body {
   z-index: 1;
 }
 
-.btn {
+.button {
 	position: relative;
 	width: 40px;
 	height: 40px;
@@ -137,7 +137,7 @@ body {
 	cursor: pointer;
 	transition: border 0.1s ease-in-out;
 }
-.btn:hover {
+.button:hover {
 	border: #333 3px solid;
 }
 
@@ -152,7 +152,7 @@ body {
   left: 30%;
   display: block;
 }
-.btn.pause .fa.fa-play, .btn.play .fa.fa-pause {
+.button.pause .fa.fa-play, .button.play .fa.fa-pause {
 	 display: none;
 }
 
@@ -165,9 +165,20 @@ body {
   color: #630808;
   cursor: pointer;
 }
-#sunburstContainer{
+#sunBurstContainer{
   position: absolute;
-  top: 1000px;
+  top: 800px;
+  left: 300px;
   color: white;
-  height: 600px;
+}
+
+/* https://bl.ocks.org/mbostock/4348373 */
+#sunBurstContainer path{
+  stroke: #fff;
+}
+.dropdown{
+  position: absolute;
+  top: 800px;
+  left: 50px;
+
 }

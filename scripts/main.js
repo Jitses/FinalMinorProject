@@ -282,7 +282,7 @@ window.onload = function(){
   // https://en.wikipedia.org/wiki/World_War_II_by_country */
   d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/occupation.json", function(dataset) {
 
-    buttonPlay = document.getElementsByClassName('btn.play')
+    buttonPlay = document.getElementsByClassName('button.play')
 
     // https://stackoverflow.com/questions/37187504/javascript-second-counter
     var month = 0;
@@ -335,7 +335,7 @@ window.onload = function(){
 
     // https://codepen.io/MarioDesigns/pen/ENevMJ
     // On click button, changes class button from play to pause and the reverse
-    $('body').on('click', '.btn', function(e)   {
+    $('body').on('click', '.button', function(e)   {
   	e.preventDefault();
   	if ( $(this).hasClass('play') ) {
       timeFrame = setInterval(incrementSeconds, 1000);
@@ -376,7 +376,6 @@ window.onload = function(){
     // https://en.wikipedia.org/wiki/Battle_of_Remagen
     // https://en.wikipedia.org/wiki/Operation_Varsity
 
-
     // https://bl.ocks.org/mbostock/4348373
     function CreateSunBurst(){
       var widthSunBurst = 960,
@@ -402,23 +401,43 @@ window.onload = function(){
           .innerRadius(function(d) { return Math.max(0, y(d.y)); })
           .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
 
-      var svg = d3.select("body").append("svg")
+      var svg = d3.select("#sunBurstContainer").append("svg")
           .attr("width", widthSunBurst)
           .attr("height", heightSunBurst)
-        .append("g")
+          .append("g")
           .attr("transform", "translate(" + widthSunBurst / 2 + "," + (heightSunBurst / 2) + ")");
 
-      d3.json("battles.json", function(error, root) {
+      d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/battles.json", function(error, dataset) {
         if (error) throw error;
 
         svg.selectAll("path")
-            .data(partition.nodes(root))
+            .data(partition.nodes(dataset))
           .enter().append("path")
             .attr("d", arc)
             .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
             .on("click", click)
-          .append("title")
+            .append("title")
             .text(function(d) { return d.name + "\n" + formatNumber(d.value); });
+
+
+        // Wait for click in dropdown menu
+        $(".dropdown-item").click(function(event){
+          country = ($(this).html())
+
+          // https://stackoverflow.com/questions/13437446/how-to-display-selected-item-in-bootstrap-button-dropdown-title
+          $(".btn.btn-secondary.dropdown-toggle:first-child").text($(this).text());
+          $(".btn.btn-secondary.dropdown-toggle:first-child").val($(this).text());
+
+          // Loop over dataset of battles, until clicked country is found
+          for (i = 0; i < dataset.children.length; i++){
+            if (dataset.children[i].name == country){
+              var index = i
+            }
+          }
+          // Call click function with right index of country
+          // This opens the sunburst at the right country
+          click(dataset.children[index])
+        });
       });
 
       function click(d) {
@@ -435,8 +454,14 @@ window.onload = function(){
       }
 
       d3.select(self.frameElement).style("height", heightSunBurst + "px");
-    }
-CreateSunBurst()
+
+
+    };
+
+    CreateSunBurst()
+
+
+
 
 
 
