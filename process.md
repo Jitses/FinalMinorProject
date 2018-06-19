@@ -49,3 +49,7 @@ However, the data is easier to retrieve. The data will be retrieved manually (st
 - Organised all the battle data
 - Made the sunburst
 - Made the bootstrap menu that changes the sunburst accordingly
+
+# 19-6-2018
+- Made a legend for the map
+- Fixed sunburst scrolling bug

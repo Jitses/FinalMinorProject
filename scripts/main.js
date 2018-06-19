@@ -451,6 +451,7 @@ window.onload = function(){
             })
           .selectAll("path")
             .attrTween("d", function(d) { return function() { return arc(d); }; });
+            $('html, body').animate({scrollTop: '+=1000px'}, 800);
       }
 
       d3.select(self.frameElement).style("height", heightSunBurst + "px");
