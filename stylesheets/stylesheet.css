@@ -2,6 +2,7 @@
   width: 100%;
   height: 500px;
   display: inline-block;
+  background-image: url("doc/worldwar2.jpg");
 }
 /* #slider, #containerMap{
   position: absolute;
