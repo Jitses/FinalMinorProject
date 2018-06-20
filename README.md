@@ -4,6 +4,9 @@ Jitse Schol
 
 Final project of the Minor Programmeren at the University of Amsterdam
 
+## Demo
+https://jitses.github.io/FinalMinorProject/
+
 ## Idea:
 
 Second world war, timelapse of countries that were conquered and freed, by dynamic colour filling.
