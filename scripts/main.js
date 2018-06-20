@@ -477,10 +477,9 @@ window.onload = function(){
       });
 
       function click(d) {
-        console.log(d.name)
         // https://stackoverflow.com/questions/13437446/how-to-display-selected-item-in-bootstrap-button-dropdown-title
         $(".btn.btn-secondary.dropdown-toggle:first-child").text(d.name);
-        
+
         svg.transition()
             .duration(750)
             .tween("scale", function() {

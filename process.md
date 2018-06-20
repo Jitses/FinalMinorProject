@@ -46,10 +46,16 @@ However, the data is easier to retrieve. The data will be retrieved manually (st
 
 # 18-6-2018
 - Worked on the sunburst today
-- Organised all the battle data
+- Organized all the battle data
 - Made the sunburst
 - Made the bootstrap menu that changes the sunburst accordingly
 
 # 19-6-2018
 - Made a legend for the map
 - Fixed sunburst scrolling bug
+
+#20-6-2018
+- Made bar chart x axis labels
+- When clicked on sunburst, menu on side shows clicked element
+- Added texts to explain visualizations
+- Added sources to the webpage
