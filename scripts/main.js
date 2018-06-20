@@ -58,6 +58,10 @@ window.onload = function(){
       // empty barchart container
       document.getElementById('containerBarChart').innerHTML = "";
 
+      // https://www.w3schools.com/js/js_htmldom_css.asp
+      // Display source bar chart
+      document.getElementById('sourceBarChart').style.display = "block"
+
       // Retrieved from http://learnjsdata.com/read_data.html
       d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/wikiCasualties.json", function(dataset) {
 
@@ -76,8 +80,6 @@ window.onload = function(){
           var civilianDeaths = dataset.data[index]['Civilian deaths due to military activity and crimes against humanity']
           var militaryWounded = dataset.data[index]['Military wounded']
           var totalDeaths = dataset.data[index]['Total Deaths']
-
-
 
           // Push variables to countryData array
           countryData.push(militaryDeathsAllCauses, civilianDeaths, militaryWounded, totalDeaths)
@@ -172,14 +174,13 @@ window.onload = function(){
                 return(0)
               }
               else {
-
                 return (heightBarChart - yScale(d))
               }
             })
 
             .attr("width", "60")
             .attr("x", function(d, i) {
-              return ((i * 100) + 100)
+              return ((i * 110) + 100)
             })
 
             .attr("y", function(d, i) {
@@ -226,22 +227,46 @@ window.onload = function(){
             // call x axis
             .call(xAxis);
 
-            // append y axis
+            // http://www.d3noob.org/2012/12/adding-axis-labels-to-d3js-graph.html
+            svg.append("text")
+              .attr("x", 70)
+              .attr("y", 490)
+              .style("text-anchor", "start")
+              .text("Military Deaths");
+
+            svg.append("text")
+              .attr("x", 230)
+              .attr("y", 490)
+              .style("text-anchor", "middle")
+              .text("Civilian Deaths");
+
+            svg.append("text")
+              .attr("x", 350)
+              .attr("y", 490)
+              .style("text-anchor", "middle")
+              .text("Military Wounded");
+
+            svg.append("text")
+            .attr("x", 460)
+            .attr("y", 490)
+            .style("text-anchor", "middle")
+            .text("Total Deaths");
+
+            // Append y axis
             svg.append("g")
 
-            // use axis class
+            // Use axis class
             .attr("class", "axis")
 
-            // transform y axis
+            // Transform y axis
             .attr("transform", "translate(" + 75 +", 0)")
 
-            // call y axis
+            // Call y axis
             .call(yAxis)
 
             // All done
             return 0;
           }
-
 
         else{
           index = index + 1;
@@ -294,13 +319,18 @@ window.onload = function(){
     var counter = document.getElementById('counter');
 
     function incrementSeconds() {
-      if (counter.innerText == "12-1945"){
-        clearInterval(startTimeframe);
-      }
       if (month == 12){
+        if (counter.innerText == "12-1945"){
+          console.log("hi")
+          clearInterval(timeframe);
+          $('.button').removeClass('pause');
+      		$('.button').addClass('play');
+        }
+        else{
         month = 1
         year += 1
         counter.innerText = month + "-" + year;
+      }
       }
       else{
         month += 1
@@ -338,15 +368,21 @@ window.onload = function(){
     $('body').on('click', '.button', function(e)   {
   	e.preventDefault();
   	if ( $(this).hasClass('play') ) {
-      timeFrame = setInterval(incrementSeconds, 1000);
+      timeframe = setInterval(incrementSeconds, 50);
   		$(this).removeClass('play');
   		$(this).addClass('pause');
   	} else {
       // https://stackoverflow.com/questions/109086/stop-setinterval-call-in-javascript
-      clearInterval(timeFrame);
+      clearInterval(timeframe);
   		$(this).removeClass('pause');
   		$(this).addClass('play');
   	}
+    });
+
+
+    // https://stackoverflow.com/questions/5404839/how-can-i-refresh-a-page-with-jquery
+    $('.refresh').click(function() {
+    location.reload();
     });
 
   });
@@ -441,6 +477,10 @@ window.onload = function(){
       });
 
       function click(d) {
+        console.log(d.name)
+        // https://stackoverflow.com/questions/13437446/how-to-display-selected-item-in-bootstrap-button-dropdown-title
+        $(".btn.btn-secondary.dropdown-toggle:first-child").text(d.name);
+        
         svg.transition()
             .duration(750)
             .tween("scale", function() {
@@ -460,12 +500,4 @@ window.onload = function(){
     };
 
     CreateSunBurst()
-
-
-
-
-
-
-
-
 }

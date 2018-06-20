@@ -18,7 +18,7 @@
 
 #legend{
   position: absolute;
-  left: 1100px;
+  left: 490px;
   top: 550px;
 }
 
@@ -60,6 +60,12 @@
   margin-left: 20px;
 }
 
+#sourceBarChart{
+  position: absolute;
+  top: 550px;
+  left: 150px;
+  display: none;
+}
 /* CSS of barchart retrieved from my own dataprocessing repository */
 /* style of axis */
 .axis path, .axis line, .axis_x path, .axis_x line {
@@ -160,7 +166,25 @@ body {
   z-index: 1;
 }
 
-.button {
+#myInfo{
+  position: absolute;
+  top: 600px;
+  left: 30px;
+}
+#mapInfo{
+  position: absolute;
+  top: 600px;
+  width: 400px;
+  left: 800px;
+}
+#sunburstInfo{
+  position: absolute;
+  top: 1200px;
+  width: 400px;
+  left: 20px;
+}
+
+.button, .refresh {
 	position: relative;
 	width: 40px;
 	height: 40px;
@@ -169,7 +193,7 @@ body {
 	cursor: pointer;
 	transition: border 0.1s ease-in-out;
 }
-.button:hover {
+.button:hover, .refresh:hover {
 	border: #333 3px solid;
 }
 
@@ -184,6 +208,18 @@ body {
   left: 30%;
   display: block;
 }
+.refresh{
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+.fa.fa-repeat{
+  font-size: 25px;
+  position: relative;
+  left: 6px;
+  top: 5px;
+}
+
 .button.pause .fa.fa-play, .button.play .fa.fa-pause {
 	 display: none;
 }
@@ -199,7 +235,7 @@ body {
 }
 #sunBurstContainer{
   position: absolute;
-  top: 800px;
+  top: 900px;
   left: 300px;
   color: white;
 }
@@ -210,7 +246,7 @@ body {
 }
 .dropdown{
   position: absolute;
-  top: 800px;
+  top: 950px;
   left: 50px;
 
 }

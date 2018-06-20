@@ -40,6 +40,21 @@ id that fit in the data (did not collide with another variable name). Cyprus ID 
   </head>
   <body>
     <div id="upperContainer">
+      <div id="myInfo">
+        <h2> World War 2 Data Visualisation Europe </h2>
+        <h3> By Jitse Schol </h3>
+      </div>
+      <div id="mapInfo">
+        <p>The map shows the territory changes of the axis and allied forces
+        over time. Click the play button to see the visualization. You can click
+        on a country to see the bar chart visualisation of casualties. Data sources: <br>
+        <a href="http://www.historyplace.com/worldwar2/timeline/ww2time.htm">History Place </a> and
+        <a href="https://en.wikipedia.org/wiki/World_War_II_by_country"> Wikipedia </a></p>
+      </div>
+      <p id="sourceBarChart">
+        Data Source Bar Chart:
+        <a href="https://en.wikipedia.org/wiki/World_War_II_casualties"> Wikipedia </a>
+      </p>
        <div id="counter"></div>
        <div id="legend">
           <ul>
@@ -60,12 +75,17 @@ id that fit in the data (did not collide with another variable name). Cyprus ID 
        <!-- https://codepen.io/MarioDesigns/pen/ENevMJ -->
        <div class="containerButton">
          <div class="button play">
-               <!-- https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-play -->
-               <i class="fa fa-play"></i>
-               <i class="fa fa-pause"></i>
+           <!-- https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-play -->
+           <i class="fa fa-play"></i>
+           <i class="fa fa-pause"></i>
   	     </div>
+         <div class="refresh">
+          <!-- https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-repeat -->
+          <i class="fa fa-repeat"></i>
+         </div>
        </div>
        <div id="containerBarChart"></div>
+
        <div id="containerMap"></div>
        <div class="scroller">
          <!-- https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-chevron-circle-down -->
@@ -96,8 +116,19 @@ id that fit in the data (did not collide with another variable name). Cyprus ID 
         <a class="dropdown-item" href="#">United Kingdom</a>
       </div>
     </div>
-
-
+    <div id="sunburstInfo">
+      <p>The sunburst shows some of the significant battles in WW2.
+      Hover over a radial to see the information. The sunburst starts
+      with the entire battles dataset (centre). You can click on a radial next to the centre,
+      to see battles in a country. When you click on a battle in a country,
+      you can see the number of casualties on the axis and allied side of that battle.
+      The numbers are estimates retrieved from multiple sources.
+      <br><br>Important data sources for this visualisation:
+      </p>
+      <a href= "https://en.wikipedia.org/wiki/Main_Page"> Wikipedia </a>
+      <br>
+      <a href= "https://www.thoughtco.com/world-war-ii-battles-2361453"> Thoughtco </a>
+    </div>
   </body>
 
 </html>
