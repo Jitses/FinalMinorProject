@@ -12,6 +12,8 @@
 
 // http://datamaps.github.io/
 window.onload = function(){
+
+    // Initialize new map
     var map = new Datamap({
     element: document.getElementById('containerMap'),
     projection: 'mercator',
@@ -40,7 +42,6 @@ window.onload = function(){
           // Save country name of country clicked on
           var countryName = geography.properties.name;
 
-
           // Create bar chart of clicked country
           createBarChart(countryName)
 
@@ -55,7 +56,7 @@ window.onload = function(){
     function createBarChart(country){
 
       // https://stackoverflow.com/questions/3450593/how-do-i-clear-the-content-of-a-div-using-javascript
-      // empty barchart container
+      // Empty barchart container
       document.getElementById('containerBarChart').innerHTML = "";
 
       // https://www.w3schools.com/js/js_htmldom_css.asp
@@ -83,7 +84,8 @@ window.onload = function(){
 
           // Push variables to countryData array
           countryData.push(militaryDeathsAllCauses, civilianDeaths, militaryWounded, totalDeaths)
-          console.log(countryData)
+
+          // Check for no data
           if (countryData[0] == "No data" && countryData[1] == "No data" && countryData[2] == "No data" && countryData[3] == "No data"){
 
             document.getElementById('containerBarChart').innerHTML = "No data for the country"

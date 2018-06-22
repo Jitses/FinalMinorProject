@@ -54,8 +54,17 @@ However, the data is easier to retrieve. The data will be retrieved manually (st
 - Made a legend for the map
 - Fixed sunburst scrolling bug
 
-#20-6-2018
+# 20-6-2018
 - Made bar chart x axis labels
 - When clicked on sunburst, menu on side shows clicked element
 - Added texts to explain visualizations
 - Added sources to the webpage
+
+# 22-6-2018
+- Presented today
+- Made design notes on what to do:
+  Make bar chart text white
+  Maybe an extra menu for battles
+  Hovering over countries on map should only change border color
+  Bar chart, military wounded as the first bar
+  Github repository: .md in capital letters and javascript and python not in the same folder
