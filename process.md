@@ -68,3 +68,11 @@ However, the data is easier to retrieve. The data will be retrieved manually (st
   Hovering over countries on map should only change border color
   Bar chart, military wounded as the first bar
   Github repository: .md in capital letters and javascript and python not in the same folder
+
+# 25-6-2018
+- Set military wounded in bar chart as first bar
+- Changed .md in github repository to .MD
+- Changed the code from a single main.js to multiple functions/files. Main.js is now only a few lines of code.
+- I want the bar chart text color to stay black, otherwise there is too much white text.
+- Hovering over countries now does not show any background color change, which is less confusing.
+  Maybe the opacity should be changed on hover or border color should change.

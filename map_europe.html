@@ -5,7 +5,6 @@
   5-6-2018
 -->
 
-<!-- Dataset used for bar chart wikicasualties https://en.wikipedia.org/wiki/World_War_II_casualties; -->
 <!-- Some country IDs of the datamaps.world.min.js were -99. For instance Cyprus and Kosovo.
 This caused problems when colouring the map dynamically. Therefore the -99s were changed to a country
 id that fit in the data (did not collide with another variable name). Cyprus ID was for instance changed to CYP. -->
@@ -32,10 +31,16 @@ id that fit in the data (did not collide with another variable name). Cyprus ID 
     <!-- https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-play -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
     <script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <script src="libraries/datamaps.world.min.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/createMap.js"></script>
+    <script src="scripts/createBarChart.js"></script>
+    <script src="scripts/colorUpdater.js"></script>
+    <script src="scripts/interval.js"></script>
+    <script src="scripts/scroller.js"></script>
+    <script src="scripts/createSunBurst.js"></script>
+
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
   </head>
   <body>
@@ -69,9 +74,6 @@ id that fit in the data (did not collide with another variable name). Cyprus ID 
           </ul>
        </div>
 
-       <!-- https://css-tricks.com/making-pure-css-playpause-button/ -->
-       <!-- <button id='buttonPlay'></button> -->
-
        <!-- https://codepen.io/MarioDesigns/pen/ENevMJ -->
        <div class="containerButton">
          <div class="button play">
@@ -92,9 +94,7 @@ id that fit in the data (did not collide with another variable name). Cyprus ID 
          <i class="fa fa-chevron-circle-down" style="font-size:36px"></i>
        </div>
     </div>
-
-    <div id=sunBurstContainer>
-
+      <div id=sunBurstContainer>
     </div>
 
     <!-- https://getbootstrap.com/docs/4.0/components/dropdowns/ -->
@@ -125,7 +125,7 @@ id that fit in the data (did not collide with another variable name). Cyprus ID 
       The numbers are estimates retrieved from multiple sources.
       <br><br>Important data sources for this visualisation:
       </p>
-      <a href= "https://en.wikipedia.org/wiki/Main_Page"> Wikipedia </a>
+      <a href= "https://en.wikipedia.org/wiki/Main_Page"> Wikipedia (search for a battle) </a>
       <br>
       <a href= "https://www.thoughtco.com/world-war-ii-battles-2361453"> Thoughtco </a>
     </div>
