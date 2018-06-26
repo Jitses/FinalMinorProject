@@ -25,7 +25,7 @@ License datamaps: https://github.com/markmarkoh/datamaps/blob/master/LICENSE
 
 
 
-
+### License
 Copyright (c) 2018 Jitses
 
 MIT License
