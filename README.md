@@ -7,7 +7,7 @@ https://jitses.github.io/FinalMinorProject/code/main.html
 ### General Information
 Developer: Jitse Schol
 
-Project Name: World War 2 Visualisation
+Application Name: World War 2 Visualisation
 
 
 The purpose of the web page is to provide information about the Second World War. The web page is mainly intended for people that have an interest in the Second World War. Furthermore, some information could be used by history teachers, as education material. Especially the map, can be a very convenient tool in teaching. It shows how the Second World War evolved over time in a way that is very easy to understand. 
@@ -17,6 +17,11 @@ The bar chart and sunburst consist of more in depth information. The bar chart s
 <img src="doc/barchart.png" width="300px"/>
 <img src="doc/map.png" width="300px"/>
 <img src="doc/sunburst.png" width="300px"/>
+
+### External code used to build this project
+code/libraries/datamaps.world.min.js, retrieved from https://github.com/markmarkoh/datamaps
+License datamaps: https://github.com/markmarkoh/datamaps/blob/master/LICENSE
+
 
 Copyright (c) 2018 Jitses
 
@@ -38,3 +43,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
