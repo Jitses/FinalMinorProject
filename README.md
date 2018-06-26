@@ -20,7 +20,10 @@ The bar chart and sunburst consist of more in depth information. The bar chart s
 
 ### External code used to build this project
 code/libraries/datamaps.world.min.js, retrieved from https://github.com/markmarkoh/datamaps
+
 License datamaps: https://github.com/markmarkoh/datamaps/blob/master/LICENSE
+
+
 
 
 Copyright (c) 2018 Jitses
