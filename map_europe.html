@@ -1,20 +1,14 @@
 <!--
   Jitse Schol
-  Programmeerproject
   Student Number: 10781463
-  5-6-2018
+  Programmeerproject
+  28-6-2018
 -->
-
-<!-- Some country IDs of the datamaps.world.min.js were -99. For instance Cyprus and Kosovo.
-This caused problems when colouring the map dynamically. Therefore the -99s were changed to a country
-id that fit in the data (did not collide with another variable name). Cyprus ID was for instance changed to CYP. -->
-<!-- Changed czech republic and slovakia into czechslovakia in datamaps.world.min.js -->
-<!-- Changed bosnia herzegovina, Croatia, Kosovo, macedonia, Serbia and Slovenia to Yugoslavia -->
-<!-- Changed Russia, Ukraine and Belarus, Moldova to Soviet Union -->
 
 <!DOCTYPE html>
 <html>
   <head>
+    <title>WW2 Visualization</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
@@ -33,14 +27,13 @@ id that fit in the data (did not collide with another variable name). Cyprus ID 
 
     <script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <script src="libraries/datamaps.world.min.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/createMap.js"></script>
-    <script src="scripts/createBarChart.js"></script>
-    <script src="scripts/colorUpdater.js"></script>
-    <script src="scripts/interval.js"></script>
-    <script src="scripts/scroller.js"></script>
-    <script src="scripts/createSunBurst.js"></script>
-
+    <script src="scripts/JS/main.js"></script>
+    <script src="scripts/JS/createMap.js"></script>
+    <script src="scripts/JS/createBarChart.js"></script>
+    <script src="scripts/JS/colorUpdater.js"></script>
+    <script src="scripts/JS/interval.js"></script>
+    <script src="scripts/JS/scroller.js"></script>
+    <script src="scripts/JS/createSunBurst.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
   </head>
   <body>
@@ -69,8 +62,8 @@ id that fit in the data (did not collide with another variable name). Cyprus ID 
             <li class="legendText">Allied Territory</li>
             <li id="invaded"></li>
             <li class="legendText">Invaded by Germany (but no surrender)</li>
-            <li id="germanTerritory"> </li>
-            <li class="legendText">German Territory</li>
+            <li id="germanTerritory"></li>
+            <li class="legendText">German</li>
           </ul>
        </div>
 
@@ -87,16 +80,14 @@ id that fit in the data (did not collide with another variable name). Cyprus ID 
          </div>
        </div>
        <div id="containerBarChart"></div>
-
        <div id="containerMap"></div>
        <div class="scroller">
          <!-- https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-chevron-circle-down -->
          <i class="fa fa-chevron-circle-down" style="font-size:36px"></i>
        </div>
-    </div>
-      <div id=sunBurstContainer>
-    </div>
+     </div>
 
+    <div id=sunBurstContainer></div>
     <!-- https://getbootstrap.com/docs/4.0/components/dropdowns/ -->
     <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -130,5 +121,4 @@ id that fit in the data (did not collide with another variable name). Cyprus ID 
       <a href= "https://www.thoughtco.com/world-war-ii-battles-2361453"> Thoughtco </a>
     </div>
   </body>
-
 </html>

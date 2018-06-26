@@ -2,6 +2,7 @@
 # Jitse Schol
 # Student Number: 10781463
 # Made in Data Processing week 3
+# Converts a CSV file to a JSON file
 #
 
 # Retrieved from https://stackoverflow.com/questions/19697846/how-to-convert-csv-file-to-multiline-json

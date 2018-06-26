@@ -1,3 +1,13 @@
+/*
+ * Jitse Schol
+ * Student Number: 10781463
+ * Programmeerproject
+ * 28-6-2018
+ *
+ * Creates a datamaps map
+ * http://datamaps.github.io
+ */
+
 function createMap(){
 
     // Initialize new map
@@ -10,7 +20,7 @@ function createMap(){
     scope: 'world',
 
     // http://datamaps.github.io/#scopes
-    setProjection: function(element) {
+    setProjection: function(element){
     var projection = d3.geo.equirectangular()
     .center([20, 51])
     .rotate([4.4, 0])
@@ -22,10 +32,9 @@ function createMap(){
     return {path: path, projection: projection};
    },
 
-    // https://bl.ocks.org/briwa/60024d70a5aee921d5910828fe8115be
-    // Waits for click on map
+    // Waits for click on map, https://bl.ocks.org/briwa/60024d70a5aee921d5910828fe8115be
     done: function(datamap) {
-      datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+      datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography){
 
           // Save country name of country clicked on
           var countryName = geography.properties.name;

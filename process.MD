@@ -63,7 +63,6 @@ However, the data is easier to retrieve. The data will be retrieved manually (st
 # 22-6-2018
 - Presented today
 - Made design notes on what to do:
-  Make bar chart text white
   Maybe an extra menu for battles
   Hovering over countries on map should only change border color
   Bar chart, military wounded as the first bar
@@ -76,3 +75,6 @@ However, the data is easier to retrieve. The data will be retrieved manually (st
 - I want the bar chart text color to stay black, otherwise there is too much white text.
 - Hovering over countries now does not show any background color change, which is less confusing.
   Maybe the opacity should be changed on hover or border color should change.
+
+# 26-6-2018
+- Organized and cleaned code  

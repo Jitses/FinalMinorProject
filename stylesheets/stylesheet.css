@@ -1,12 +1,22 @@
+/* https://codepen.io/MarioDesigns/pen/ENevMJ */
+html, body {
+	height: 1600px;
+  width: 100%;
+	margin: 0;
+	padding: 0;
+  color: white;
+}
+body {
+  background: rgb(231,76,60);
+  background: -moz-linear-gradient(-45deg,  grey 0%, black 100%);
+  background: -webkit-linear-gradient(-45deg,  grey) 0%, black 100%);
+  background: linear-gradient(135deg,  grey 0%, black 100%);
+}
 #upperContainer{
   width: 100%;
   height: 500px;
   display: inline-block;
 }
-/* #slider, #containerMap{
-  position: absolute;
-} */
-
 #containerMap{
   color: black;
   width: 50%;
@@ -15,13 +25,11 @@
   right: 0px;
   top: 50px;
 }
-
 #legend{
   position: absolute;
   left: 490px;
   top: 550px;
 }
-
 #legend ul{
   list-style: none;
 }
@@ -46,19 +54,16 @@
 #germanTerritory{
   background-color: #ca0020;
 }
-
 #counter{
   position: absolute;
   font-size: 20px;
   top: 500px;
   right: 300px;
 }
-
 #containerBarChart{
   margin-top: 50px;
   margin-left: 20px;
 }
-
 #sourceBarChart{
   position: absolute;
   top: 550px;
@@ -66,30 +71,32 @@
   display: none;
   color: black;
 }
-/* CSS of barchart retrieved from my own dataprocessing repository */
-/* style of axis */
+
+/* CSS of barchart retrieved from my own dataprocessing repository.
+  Style of axis */
 .axis path, .axis line, .axis_x path, .axis_x line {
     fill: none;
     stroke: black;
     shape-rendering: crispEdges;
 }
 
-/* style of axis text */
+/* Style of axis text */
 .axis text{
   font-family: sans-serif;
   font-size: 11px;
 }
 
-/* retrieved from http://bl.ocks.org/Caged/6476579 */
+/* Retrieved from http://bl.ocks.org/Caged/6476579 */
 rect{
   fill: #630808;
 }
 rect:hover{
   fill: #333;
 }
+
 /*
- * retrieved from https://css-tricks.com/snippets/css/text-rotation/
- * rotates text
+ * Retrieved from https://css-tricks.com/snippets/css/text-rotation/
+ * Rotates text
  */
 .y_axis_text {
 
@@ -143,29 +150,12 @@ rect:hover{
   top: 100%;
   left: 0;
 }
-
-/* https://codepen.io/MarioDesigns/pen/ENevMJ */
-html, body {
-	height: 1600px;
-  width: 100%;
-	margin: 0;
-	padding: 0;
-  color: white;
-}
-
-body {
-  background: rgb(231,76,60);
-  background: -moz-linear-gradient(-45deg,  grey 0%, black 100%);
-  background: -webkit-linear-gradient(-45deg,  grey) 0%, black 100%);
-  background: linear-gradient(135deg,  grey 0%, black 100%);
-}
 .containerButton{
   position: absolute;
   right: 500px;
   top: 60px;
   z-index: 1;
 }
-
 #myInfo{
   position: absolute;
   top: 600px;
@@ -183,7 +173,6 @@ body {
   width: 400px;
   left: 20px;
 }
-
 .button, .refresh {
 	position: relative;
 	width: 40px;
@@ -219,11 +208,9 @@ body {
   left: 6px;
   top: 5px;
 }
-
 .button.pause .fa.fa-play, .button.play .fa.fa-pause {
 	 display: none;
 }
-
 .scroller{
   position: absolute;
   top: 650px;
@@ -248,5 +235,4 @@ body {
   position: absolute;
   top: 950px;
   left: 50px;
-
 }

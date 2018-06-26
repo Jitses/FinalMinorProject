@@ -1,11 +1,11 @@
-  /*
-  * Jitse Schol
-  * Programmeerproject
-  * Student Number: 10781463
-  * 5-5-2018
-  */
-
-// http://datamaps.github.io/
+/*
+ * Jitse Schol
+ * Student Number: 10781463
+ * Programmeerproject
+ * 28-6-2018
+ *
+ * Main function that creates the web page by calling multiple functions
+ */
 window.onload = function(){
 
   // Make a map
