@@ -13,6 +13,6 @@ The bar chart and sunburst consist of more in depth information. The bar chart s
 
 ### Images
 <img src="doc/barchart.png" width="200px"/>
-![](doc/barchart.png =100x20)
-![](doc/map.png)
-![](doc/sunburst.png)
+<img src="doc/map.png" width="200px"/>
+<img src="doc/sunburst.png" width="200px"/>
+
