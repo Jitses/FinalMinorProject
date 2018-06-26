@@ -12,6 +12,6 @@ The purpose of the web page is to provide information about the Second World War
 The bar chart and sunburst consist of more in depth information. The bar chart shows the casualties data per country, whereas the sunburst shows data on casualties in several significant battles. 
 
 ### Images
-![](doc/barchart.png | width=40)
+![](doc/barchart.png =100x20)
 ![](doc/map.png)
 ![](doc/sunburst.png)
