@@ -2,7 +2,7 @@
 Final project of the Minor Programmeren at the University of Amsterdam
 
 ## Demo
-https://jitses.github.io/FinalMinorProject/map_europe.html
+https://jitses.github.io/FinalMinorProject/main.html
 
 ### General Information
 Developer: Jitse Schol
