@@ -4,6 +4,9 @@ Final project of the Minor Programmeren at the University of Amsterdam
 ## Demo
 https://jitses.github.io/FinalMinorProject/code/main.html
 
+### Video
+https://youtu.be/ZwhFDrwAbSE
+
 ### General Information
 Developer: Jitse Schol
 
