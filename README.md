@@ -2,7 +2,7 @@
 Final project of the Minor Programmeren at the University of Amsterdam
 
 ## Demo
-https://jitses.github.io/FinalMinorProject/main.html
+https://jitses.github.io/FinalMinorProject/code/main.html
 
 ### General Information
 Developer: Jitse Schol
