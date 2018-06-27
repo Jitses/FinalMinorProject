@@ -26,6 +26,30 @@ code/libraries/datamaps.world.min.js, retrieved from https://github.com/markmark
 
 License datamaps: https://github.com/markmarkoh/datamaps/blob/master/LICENSE
 
+D3 library for graphs: https://github.com/d3/d3
+
+License D3: https://github.com/d3/d3/blob/master/LICENSE
+
+D3 tip for tooltip barchart: https://github.com/Caged/d3-tip
+
+License D3 tip: https://github.com/Caged/d3-tip/blob/master/LICENSE
+
+Bootstrap: https://github.com/twbs/bootstrap
+
+License Bootstrap: https://github.com/twbs/bootstrap/blob/v4-dev/LICENSE
+
+Jquery: https://github.com/jquery/jquery
+
+License Jquery: https://github.com/jquery/jquery/blob/master/LICENSE.txt
+
+Topojson: https://github.com/topojson/topojson
+
+License Topojson: https://github.com/topojson/topojson/blob/master/LICENSE.md
+
+Font Awesome (icons): https://github.com/FortAwesome/Font-Awesome
+
+License Font Awesome: https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt
+
 
 
 ### License
