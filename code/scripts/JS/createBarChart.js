@@ -95,7 +95,7 @@
 
           else if (Number(countryData[i]) > domain_max_y){
             // Set new y domain max
-            domain_max_y= Number(countryData[i]);
+            domain_max_y = Number(countryData[i]);
           }
         }
 
@@ -126,7 +126,7 @@
           .append("rect")
 
           // https://www.digitalocean.com/community/tutorials/getting-started-with-data-visualization-using-javascript-and-the-d3-library
-          .attr("height", function(d, i) {
+          .attr("height", function(d, i){
             if (d == "No data"){
               return(0);
             }
@@ -136,11 +136,11 @@
           })
 
           .attr("width", "60")
-          .attr("x", function(d, i) {
+          .attr("x", function(d, i){
             return ((i * 110) + 100);
           })
 
-          .attr("y", function(d, i) {
+          .attr("y", function(d, i){
               if (d == "No data"){
                 return(range_min_y);
               }
