@@ -78,3 +78,10 @@ However, the data is easier to retrieve. The data will be retrieved manually (st
 
 # 26-6-2018
 - Organized and cleaned code  
+- Made demo video of project
+
+# 27-6-2018
+- Organized and cleaned code again
+- Added some sources to the readme
+- Wrote large part of the report
+- Fixed bar chart text cut off on y axis

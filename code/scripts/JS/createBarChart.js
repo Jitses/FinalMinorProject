@@ -74,6 +74,9 @@
           // Set height svg
           .attr("height", heightBarChart + marginBarChart.top + marginBarChart.bottom)
 
+          // Make sure y axis numbers are visible
+          .style("overflow", "visible")
+          
         // http://bl.ocks.org/Caged/6476579
         svg.call(tip);
 
