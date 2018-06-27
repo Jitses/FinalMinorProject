@@ -52,7 +52,6 @@
         }
 
         // Source used for bar chart basis: http://bl.ocks.org/d3noob/8952219
-        // SVG dimensions bar chart
         var marginBarChart = {top: 20, right: 40, left: 40, bottom: 20}
         var heightBarChart = 500 - marginBarChart.top - marginBarChart.bottom
         var widthBarChart = 550 - marginBarChart.left - marginBarChart.right
@@ -112,7 +111,6 @@
           .range([range_min_x, range_max_x]);
 
         // Create y scale using y domain and y range
-
         var yScale = d3.scale.linear()
           .domain([domain_min_y, domain_max_y])
           .range([heightBarChart, 0]);

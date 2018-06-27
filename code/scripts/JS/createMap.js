@@ -7,7 +7,6 @@
  * Creates a datamaps map
  * http://datamaps.github.io
  */
-
 function createMap(){
 
     // Initialize new map
