@@ -50,6 +50,9 @@ Font Awesome (icons): https://github.com/FortAwesome/Font-Awesome
 
 License Font Awesome: https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt
 
+Popper.js (for dropdown menu): https://github.com/FezVrasta/popper.js/
+
+License Popper.js: https://github.com/FezVrasta/popper.js/blob/master/LICENSE.md
 
 
 ### License
