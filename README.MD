@@ -56,9 +56,19 @@ License Popper.js: https://github.com/FezVrasta/popper.js/blob/master/LICENSE.md
 
 #### These sources can be found in my code and all have their own licenses:
 
+Some sources that are used multiple times:
+
+License Stackoverflow:
+https://stackoverflow.com/help/licensing
+
+License W3:
+https://www.w3schools.com/about/about_copyright.asp
+
 createBarchart.js:
 
 https://www.digitalocean.com/community/tutorials/getting-started-with-data-visualization-using-javascript-and-the-d3-library
+
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 
 https://stackoverflow.com/questions/3450593/how-do-i-clear-the-content-of-a-div-using-javascript
 
@@ -66,24 +76,38 @@ https://www.w3schools.com/js/js_htmldom_css.asp
 
 http://learnjsdata.com/read_data.html
 
+License: CC0, or Public Domain where applicable (https://github.com/vlandham/js_data)
+
 http://bl.ocks.org/d3noob/8952219
+No License
 
 http://bl.ocks.org/Caged/6476579
 
+No License
+
 http://alignedleft.com/tutorials/d3/making-a-bar-chart
+
+Copyright is by Scott Murray, could not find license
 
 http://www.d3noob.org/2012/12/adding-axis-labels-to-d3js-graph.html
 
+Could not find license
 
 createMap.js:
 
 https://bl.ocks.org/briwa/60024d70a5aee921d5910828fe8115be
 
+No License
+
 http://datamaps.github.io
+
+License datamaps: https://github.com/markmarkoh/datamaps/blob/master/LICENSE
 
 createSunBurst.js:
 
 https://bl.ocks.org/mbostock/4348373
+
+License: GNU General Public License, version 3.
 
 https://stackoverflow.com/questions/13437446/how-to-display-selected-item-in-bootstrap-button-dropdown-title
 
@@ -92,6 +116,8 @@ interval.js:
 https://stackoverflow.com/questions/37187504/javascript-second-counter
 
 https://codepen.io/MarioDesigns/pen/ENevMJ
+
+License: MIT (https://blog.codepen.io/legal/licensing/)
 
 https://stackoverflow.com/questions/109086/stop-setinterval-call-in-javascript
 
@@ -109,19 +135,31 @@ stylesheet.css:
 
 https://css-tricks.com/snippets/css/text-rotation/
 
+License: https://css-tricks.com/license/
+
 main.html:
 
 https://getbootstrap.com/docs/4.0/getting-started/introduction/
 
 https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css
 
+https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
+
+https://getbootstrap.com/docs/4.0/components/dropdowns/
+
+License Bootstrap: https://github.com/twbs/bootstrap/blob/v4-dev/LICENSE
+
 https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
 
-https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
+License: https://github.com/FezVrasta/popper.js/blob/master/LICENSE.md
 
 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
 
+License Font Awesome: https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt
+
 https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js
+
+License D3 tip: https://github.com/Caged/d3-tip/blob/master/LICENSE
 
 https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-play
 
@@ -131,7 +169,7 @@ https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-repeat
 
 https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-chevron-circle-down
 
-https://getbootstrap.com/docs/4.0/components/dropdowns/
+
 
 ### License
 Copyright (c) 2018 Jitses
