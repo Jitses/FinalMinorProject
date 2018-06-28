@@ -54,7 +54,8 @@ Popper.js (for dropdown menu): https://github.com/FezVrasta/popper.js/
 
 License Popper.js: https://github.com/FezVrasta/popper.js/blob/master/LICENSE.md
 
-These code sources are also used and all have their own licenses:
+#####These sources can be found in my code and all have their own licenses:
+
 createBarchart.js:
 
 https://www.digitalocean.com/community/tutorials/getting-started-with-data-visualization-using-javascript-and-the-d3-library
