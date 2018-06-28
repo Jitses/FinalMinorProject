@@ -18,7 +18,7 @@ function createMap(){
     },
     scope: 'world',
 
-    // http://datamaps.github.io/#scopes
+    // Set scope on Europe: http://datamaps.github.io/#scopes
     setProjection: function(element){
     var projection = d3.geo.equirectangular()
     .center([20, 51])

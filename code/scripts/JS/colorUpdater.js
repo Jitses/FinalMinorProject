@@ -5,7 +5,7 @@
  * 28-6-2018
  *
  * Source: My Data processing week 5 repository
- * Updates colors of map countries
+ * Updates colors of countries on the map
  *
  * Some country IDs of the datamaps.world.min.js were -99. For instance Cyprus and Kosovo.
  * This caused problems when colouring the map dynamically. Therefore the -99s were changed to a country
@@ -19,6 +19,7 @@
 function colorUpdater(colorinput, country, map){
   var countries = Datamap.prototype.worldTopo.objects.world.geometries;
 
+  // Loop over countries
   for (var j = 0; j < countries.length; j++) {
 
     var countryName = countries[j].properties.name
@@ -33,7 +34,7 @@ function colorUpdater(colorinput, country, map){
       var country_color = {};
       country_color[countryID] = color
     }
-    
+
     // https://github.com/markmarkoh/datamaps/releases/tag/v0.2.2
     map.updateChoropleth(country_color);
     }

@@ -77,11 +77,13 @@ function interval(map){
     // On click button, changes class button from play to pause and the reverse
     $('body').on('click', '.button', function(e){
     	e.preventDefault();
+      // Start playing when class is play on click
     	if ( $(this).hasClass('play')){
         timeframe = setInterval(incrementSeconds, 500);
     		$(this).removeClass('play');
     		$(this).addClass('pause');
     	}
+      // Pause playing if class is pause
       else{
         // https://stackoverflow.com/questions/109086/stop-setinterval-call-in-javascript
         clearInterval(timeframe);
@@ -90,7 +92,7 @@ function interval(map){
     	}
     });
 
-    // https://stackoverflow.com/questions/5404839/how-can-i-refresh-a-page-with-jquery
+    // Refresh button: https://stackoverflow.com/questions/5404839/how-can-i-refresh-a-page-with-jquery
     $('.refresh').click(function(){
       location.reload();
     });

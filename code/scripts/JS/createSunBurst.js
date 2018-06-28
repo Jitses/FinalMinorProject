@@ -16,6 +16,7 @@ function createSunBurst(){
 
   var formatNumber = d3.format(",d");
 
+  // Set scales
   var x = d3.scale.linear()
       .range([0, 2 * Math.PI]);
 
@@ -63,9 +64,10 @@ function createSunBurst(){
   d3.json("https://raw.githubusercontent.com/Jitses/FinalMinorProject/master/data/battles.json", function(error, dataset) {
     if (error) throw error;
 
+    // Make sunburst parts
     svg.selectAll("path")
         .data(partition.nodes(dataset))
-      .enter().append("path")
+        .enter().append("path")
         .attr("d", arc)
         .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
         .on("click", click)
@@ -87,17 +89,18 @@ function createSunBurst(){
           var index = i
         }
       }
-      // Call click function with right index of country
-      // This opens the sunburst at the right country
+       // Call click function with right index of country, opens the sunburst at the right country
       click(dataset.children[index])
     });
   });
 
   // Initiated when clicked on sunburst and when dropdown menu country is clicked
   function click(d){
+
     // https://stackoverflow.com/questions/13437446/how-to-display-selected-item-in-bootstrap-button-dropdown-title
     $(".btn.btn-secondary.dropdown-toggle:first-child").text(d.name);
 
+    // Transition sunburst
     svg.transition()
         .duration(750)
         .tween("scale", function(){
@@ -111,8 +114,8 @@ function createSunBurst(){
       .selectAll("path")
         .attrTween("d", function(d) { return function() {return arc(d);};
       });
+        // Make sure page stays on right y position
         $('html, body').animate({scrollTop: '+=1000px'}, 800);
   }
-
   d3.select(self.frameElement).style("height", heightSunBurst + "px");
 };

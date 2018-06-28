@@ -56,7 +56,7 @@
         var heightBarChart = 500 - marginBarChart.top - marginBarChart.bottom
         var widthBarChart = 550 - marginBarChart.left - marginBarChart.right
 
-        // http://bl.ocks.org/Caged/6476579
+        // Tooltip: http://bl.ocks.org/Caged/6476579
         var tip = d3.tip()
           .attr('class', 'd3-tip')
           .offset([-10, 0])
@@ -76,13 +76,12 @@
 
           // Make sure y axis numbers are visible
           .style("overflow", "visible")
-          
+
         // http://bl.ocks.org/Caged/6476579
         svg.call(tip);
 
         var domain_min_x = 0;
 
-        // 5 data points
         var domain_max_x = countryData.length;
 
         var domain_min_y = 0;
@@ -104,7 +103,7 @@
 
         // Set ranges
         var range_min_x = 75;
-        var range_max_x = 800;
+        var range_max_x = 550;
         var range_min_y = 400;
         var range_max_y = 10;
 
@@ -181,13 +180,13 @@
           // Use axis_x class
           .attr("class", "axis_x")
 
-          // transform x axis
+          // Transform x axis
           .attr("transform", "translate(0, " + heightBarChart + ")")
 
-          // call x axis
+          // Call x axis
           .call(xAxis);
 
-          // http://www.d3noob.org/2012/12/adding-axis-labels-to-d3js-graph.html
+          // Adding labels to bar chart axis: http://www.d3noob.org/2012/12/adding-axis-labels-to-d3js-graph.html
           svg.append("text")
             .attr("x", 120)
             .attr("y", 490)

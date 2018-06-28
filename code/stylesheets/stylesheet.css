@@ -74,7 +74,8 @@ body {
 #sourceBarChart{
   position: absolute;
   top: 550px;
-  left: 150px;
+  left: 10px;
+	width: 500px;
   display: none;
   color: black;
 }
@@ -165,7 +166,7 @@ rect:hover{
 }
 #myInfo{
   position: absolute;
-  top: 600px;
+  top: 630px;
   left: 30px;
 }
 #mapInfo{
