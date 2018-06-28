@@ -55,48 +55,81 @@ Popper.js (for dropdown menu): https://github.com/FezVrasta/popper.js/
 License Popper.js: https://github.com/FezVrasta/popper.js/blob/master/LICENSE.md
 
 These code sources are also used and all have their own licenses:
-createBarchart.js: https://www.digitalocean.com/community/tutorials/getting-started-with-data-visualization-using-javascript-and-the-d3-library
+createBarchart.js:
+
+https://www.digitalocean.com/community/tutorials/getting-started-with-data-visualization-using-javascript-and-the-d3-library
+
 https://stackoverflow.com/questions/3450593/how-do-i-clear-the-content-of-a-div-using-javascript
+
 https://www.w3schools.com/js/js_htmldom_css.asp
+
 http://learnjsdata.com/read_data.html
+
 http://bl.ocks.org/d3noob/8952219
+
 http://bl.ocks.org/Caged/6476579
+
 http://alignedleft.com/tutorials/d3/making-a-bar-chart
+
 http://www.d3noob.org/2012/12/adding-axis-labels-to-d3js-graph.html
 
+
 createMap.js:
+
 https://bl.ocks.org/briwa/60024d70a5aee921d5910828fe8115be
+
 http://datamaps.github.io
 
 createSunBurst.js:
-https://bl.ocks.org/mbostock/4348373 https://stackoverflow.com/questions/13437446/how-to-display-selected-item-in-bootstrap-button-dropdown-title
+
+https://bl.ocks.org/mbostock/4348373
+
+https://stackoverflow.com/questions/13437446/how-to-display-selected-item-in-bootstrap-button-dropdown-title
 
 interval.js:
+
 https://stackoverflow.com/questions/37187504/javascript-second-counter
+
 https://codepen.io/MarioDesigns/pen/ENevMJ
+
 https://stackoverflow.com/questions/109086/stop-setinterval-call-in-javascript
+
 https://stackoverflow.com/questions/5404839/how-can-i-refresh-a-page-with-jquery
 
 scroller.js:
+
 https://stackoverflow.com/questions/2659354/jquery-scroll-down-page-a-set-increment-in-pixels-on-click
 
 convertCSVtoJSON.py:
+
 https://stackoverflow.com/questions/19697846/how-to-convert-csv-file-to-multiline-json
 
 stylesheet.css:
+
 https://css-tricks.com/snippets/css/text-rotation/
 
 main.html:
+
 https://getbootstrap.com/docs/4.0/getting-started/introduction/
+
 https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css
+
 https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+
 https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
+
 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+
 https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js
+
 https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-play
+
 https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-play
+
 https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-repeat
+
 https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-chevron-circle-down
+
 https://getbootstrap.com/docs/4.0/components/dropdowns/
 
 ### License
