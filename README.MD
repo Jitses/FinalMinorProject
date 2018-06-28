@@ -66,7 +66,7 @@ License W3:
 
 https://www.w3schools.com/about/about_copyright.asp
 
-createBarchart.js:
+Sources found in createBarchart.js:
 
 https://www.digitalocean.com/community/tutorials/getting-started-with-data-visualization-using-javascript-and-the-d3-library
 
@@ -95,7 +95,7 @@ http://www.d3noob.org/2012/12/adding-axis-labels-to-d3js-graph.html
 
 Could not find license
 
-createMap.js:
+Sources found in createMap.js:
 
 https://bl.ocks.org/briwa/60024d70a5aee921d5910828fe8115be
 
@@ -105,7 +105,7 @@ http://datamaps.github.io
 
 License datamaps: https://github.com/markmarkoh/datamaps/blob/master/LICENSE
 
-createSunBurst.js:
+Sources found in createSunBurst.js:
 
 https://bl.ocks.org/mbostock/4348373
 
@@ -113,7 +113,7 @@ License: GNU General Public License, version 3.
 
 https://stackoverflow.com/questions/13437446/how-to-display-selected-item-in-bootstrap-button-dropdown-title
 
-interval.js:
+Sources found in interval.js:
 
 https://stackoverflow.com/questions/37187504/javascript-second-counter
 
@@ -125,21 +125,21 @@ https://stackoverflow.com/questions/109086/stop-setinterval-call-in-javascript
 
 https://stackoverflow.com/questions/5404839/how-can-i-refresh-a-page-with-jquery
 
-scroller.js:
+Sources found in scroller.js:
 
 https://stackoverflow.com/questions/2659354/jquery-scroll-down-page-a-set-increment-in-pixels-on-click
 
-convertCSVtoJSON.py:
+Source found in convertCSVtoJSON.py:
 
 https://stackoverflow.com/questions/19697846/how-to-convert-csv-file-to-multiline-json
 
-stylesheet.css:
+Source found in stylesheet.css:
 
 https://css-tricks.com/snippets/css/text-rotation/
 
 License: https://css-tricks.com/license/
 
-main.html:
+Sources found in main.html:
 
 https://getbootstrap.com/docs/4.0/getting-started/introduction/
 
