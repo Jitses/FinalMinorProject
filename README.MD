@@ -21,7 +21,7 @@ The bar chart and sunburst consist of more in depth information. The bar chart s
 <img src="doc/map.png" width="300px"/>
 <img src="doc/sunburst.png" width="300px"/>
 
-### External code used to build this project
+### Libraries used to build this project
 code/libraries/datamaps.world.min.js, retrieved from https://github.com/markmarkoh/datamaps
 
 License datamaps: https://github.com/markmarkoh/datamaps/blob/master/LICENSE
