@@ -56,7 +56,7 @@ License Popper.js: https://github.com/FezVrasta/popper.js/blob/master/LICENSE.md
 
 #### Sources found in my code all have their own licenses:
 
-Some sources that are used multiple times:
+Licenses of sources that are used multiple times:
 
 License Stackoverflow:
 
