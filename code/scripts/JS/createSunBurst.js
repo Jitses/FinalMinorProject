@@ -43,7 +43,7 @@ function createSunBurst(){
       .append("g")
       .attr("transform", "translate(" + widthSunBurst / 2 + "," + (heightSunBurst / 2) + ")");
 
- /* Sources used for battles data
+ /* Sources used for battles data:
   * https://www.thoughtco.com/world-war-ii-battles-2361453
   * https://en.wikipedia.org/wiki/Battle_of_Dunkirk
   * https://en.wikipedia.org/wiki/Battle_of_Greece
